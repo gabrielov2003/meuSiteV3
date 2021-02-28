@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0" />
+    <title>Gabriel's Portfolio</title>
+    <link href="styleV2.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="scriptV2.js"></script>
+	<script src="postsV2.js"></script>
+	<div id="contents">
+		<div class="logo">
+		  <img src="images/logo.jp2" width=300px height=105px >
+		</div>
+		<nav class="lgb">
+			<button id="bIng" class="bIng" onclick="switchEng()"><img src="images/usaFlag.jp2" width=75px height=45px ></button>
+			<button id="bPt" class="bPt" onclick="switchPt()"><img src="images/brazilFlag.jp2" width=75px height=45px ></button>
+			<!--  <p class="pt"></p><p class="ing"></p>   -->
+		</nav>
+		<div id="box" style="display:none">
+			<h1><p class="pt">Email Copiado</p><p class="ing">Email Copied</p></h1><br>
+		</div>
+
+		<nav class="nav_tabs">
+		  <ul>
+			  <!--Page 1:-->
+			<li onclick="openPage(1)" id="but1">
+			  <input type="radio" name="tabs" class="rd_tabs" id="tab1">
+			  <label id="label1" for="tab1" class="tabBut"> <p class="pt" id="pt">PERFIL</p><p class="ing" id="ing">PROFILE</p> <img class="butIcon" src="images/iconProfile.jp2" width=75px height=45px ></label>
+			  <div class="content" id="tabpage_1">
+				<div class="profileBox">
+					<br>
+					<br>
+					<p style="color:white;font-weight:bold;font-size:33px;margin-left:180px;">GABRIEL VIEIRA</p>
+					<p class="pt" style="color:white;margin-left:180px;font-size:20px">Estudante de Sistema de Informação</p><p class="ing" style="color:white;margin-left:180px;font-size:25px">Information System Student</p>
+					<div style="background-color:rgb(97,165, 216);border-radius: 90px;width:280px;height:4px;opacity: 0.4;margin-left:260px;margin-top:10px;"></div>
+					<div style="background-color:rgb(97,165, 216);border-radius: 90px;width:260px;height:4px;opacity: 0.4;margin-left:270px;margin-top:5px;"></div>
+					<div class="bio"><p class="pt">Eu amo programar porque gosto muito<br>de passar meu tempo com computadores<br>e gosto muito de desafios de lógica.<br>Outra coisa que chama muito a minha <br>atenção na programação é o poder<br> de criar coisas que podem mudar o mundo<br> de uma forma positiva que pode vir a<br> ajudar alguém.</p><p class="ing">Test</p></div>
+					<br>
+				</div>
+			  </div>
+			</li>
+			  <!--Page 2:-->
+			<li onclick="openPage(2)" id="but2">
+			  <input type="radio" name="tabs" class="rd_tabs" id="tab2">
+			  <label id="label2" for="tab2" class="tabBut"> <p class="pt">RESUMO</p><p class="ing">RESUME</p> <img class="butIcon" src="images/iconResume.jp2" width=75px height=45px > </label>
+			  <div class="content" id="tabpage_2">
+				<div class="mamTop"><p class="pt">MAIS SOBRE MIM</p><p class="ing">MORE ABOUT ME</p></div>
+				<div class="mamBottom">
+					<p class="pt">
+						<br>
+					</p>
+					<p class="ing">
+						<br>
+					</p>
+				</div>
+			  </div>
+			</li>
+			  <!--Page 3:-->
+			<li onclick="openPage(3)" id="but3">
+			  <input type="radio" name="tabs" class="rd_tabs" id="tab3">
+			  <label id="label3" for="tab3" class="tabBut"> <p class="pt">POSTAGENS</p><p class="ing">POSTS</p> <img class="butIcon" src="images/iconPosts.jp2" width=75px height=45px > </label>
+			  <div class="content" id="tabpage_3">
+			  </div>
+			</li>
+			  <!--Page 4:-->
+			<li onclick="openPage(4)" id="but4">
+			  <input type="radio" name="tabs" class="rd_tabs" id="tab4">
+			  <label id="label4" for="tab4" class="tabBut"> <p class="pt">CONTATO</p><p class="ing">CONTACT</p> <img class="butIcon" src="images/iconContact.jp2" width=75px height=45px > </label>
+			  <div class="content" id="tabpage_4">
+				
+				<!--
+				<a href="https://www.instagram.com/gabriel.o.v/" target="_blank"> <img class="ig" src="images/instaBut.jp2" width=300 height=66> <a>
+				<br>
+				<a href="https://www.linkedin.com/in/gabriel-ovidio-vieira-a383b21a6/" target="_blank"> <img class="fb" src="images/linkedinBut.jp2" width=300 height=65> <a>
+				<br>
+				<a href="https://www.freelancer.com/u/gabrielov2003" target="_blank"> <img class="fr" src="images/freelancerBut.jp2" width=300 height=65> <a>
+				-->
+				<nav class="contactOptions">
+					<ul>
+						<li><a style="text-decoration:none" href="https://www.instagram.com/gabriel.o.v/" target="_blank"><label class="contactBut">INSTAGRAM<img class="butIcon" src="images/instaBut.jp2" width=75px height=45px ></label></a></li>
+						<li><a style="text-decoration:none" href="https://www.linkedin.com/in/gabriel-ovidio-vieira-a383b21a6/" target="_blank"><label class="contactBut">LINKEDIN<img class="butIcon" src="images/linkedinBut.jp2" width=75px height=45px ></label></a></li>
+						<li><a style="text-decoration:none" href="https://www.freelancer.com/u/gabrielov2003" target="_blank"><label class="contactBut">FREELANCER<img class="butIcon" src="images/freelancerBut.jp2" width=75px height=45px ></label></a></li>
+						<li><label class="contactBut" onclick="copyEmail()">EMAIL<img class="butIcon" src="images/emailBut.jp2" width=75px height=45px ></label></li>
+						<input type="text" value="gabrielov2003@gmail.com" id="myInput" style="display:none;"></input>
+					</ul>
+				</nav>
+			  </div>
+		  </ul>
+		</nav>
+		  <div class = "welcomeBox" id="welcomeText"> <p class="pt">Bem Vindo!</p><p class="ing">Welcome!</p></div>
+	</div>
+  </body>
+</html>
