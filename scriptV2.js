@@ -91,5 +91,3 @@ function closePopup()
 	setTimeout(squeezeBox, 1);
 	setTimeout(hideBox, 300);
 }
-
-
