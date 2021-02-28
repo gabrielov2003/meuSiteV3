@@ -153,7 +153,7 @@ body
 	margin-top:15px;
 	margin-left:225px;
 	width:350px;
-	background-color:rgb(157 137 255);
+  background-color:rgb(97,165, 216);
 }
 .mamTop
 {
@@ -231,7 +231,7 @@ body
 	overflow:hidden;
 	background:#b9deaf;
 	box-shadow: 0 0 20px black;
-	border-radius: 8px;
+	border-radius: 0px;
 	position:absolute;
 	left:49.5%;
 	transform:translate(-50%, -50%);
@@ -239,8 +239,8 @@ body
 	padding:10px;
 	text-align:center;
 	display:block;
-	margin-top:420px;
-	width:300px;
+	margin-top:-80px;
+	width:250px;
 	height:0px;
 	transition-property: height;
 	transition-duration: 0.3s;
