@@ -37,6 +37,31 @@
 					<div style="background-color:rgb(97,165, 216);border-radius: 90px;width:280px;height:4px;opacity: 0.4;margin-left:260px;margin-top:10px;"></div>
 					<div style="background-color:rgb(97,165, 216);border-radius: 90px;width:260px;height:4px;opacity: 0.4;margin-left:270px;margin-top:5px;"></div>
 					<div class="bio"><p class="pt">Eu amo programar porque gosto muito de passar meu tempo com computadores e gosto muito de desafios de lógica. Outra coisa que chama muito a minha  atenção na programação é o poder  de criar coisas que podem mudar o mundo  de uma forma positiva que pode vir a  ajudar alguém.</p><p class="ing">Test</p></div>
+					<div style="background-color:rgb(97,165, 216);border-radius: 90px;width:480px;height:4px;opacity: 0.4;margin-left:70px;margin-top:15px;"></div>
+					<div style="background-color:rgb(97,165, 216);border-radius: 90px;width:460px;height:4px;opacity: 0.4;margin-left:80px;margin-top:6px;"></div>
+					<div class="info" id="inf"><p class="pt">NOME: Gabriel Ovidio Vieira<br>DATA DE NASCIMENTO: 08/08/2003 (<text id="id01">Old Heading</text> anos)<br>EMAIL: gabrielov2003@gmail.com<br>NACIONALIDADE: Brasileiro<br>LÍNGUA: Português e Inglês</p><p class="ing">NAME: Gabriel Ovidio Vieira<br>DATE OF BIRTH: 08/08/2003 (<text id="id02">Old Heading</text> years old)<br>EMAIL: gabrielov2003@gmail.com<br>NATIONALITY: Brazilian<br>LANGUAGE: Portuguese and English</p></div> 
+				  <script>
+					var element = document.getElementById("id01");
+					var element2 = document.getElementById("id02");
+					var currentyear = new Date();
+					var year = currentyear.getFullYear()-2003;
+					var month = currentyear.getMonth();
+					var day = currentyear.getDate();
+					var age = 10;
+					if (month+1 < 8)
+					{
+						year = year -1;
+					}
+					if (month+1 == 8)
+					{
+						if (day < 8)
+						{
+							year = year -1;
+						}
+					}
+					element.innerHTML = year;
+					element2.innerHTML = year;
+				  </script>
 					<br>
 				</div>
 			  </div>

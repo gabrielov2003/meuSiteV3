@@ -153,7 +153,14 @@ body
 	margin-top:15px;
 	margin-left:225px;
 	width:350px;
-  background-color:rgb(97,165, 216);
+  background-color:rgba(97, 164, 216, 0);
+}
+.info
+{
+  color:white;
+  font-weight:bold;
+  font-size:19px;
+  margin-top:15px;
 }
 .mamTop
 {
