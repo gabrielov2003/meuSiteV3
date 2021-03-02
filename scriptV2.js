@@ -31,10 +31,10 @@ function switchEng()
 }
 
 lng = navigator.language;
-
+console.log("page language:",lng);
 if (lng == "pt-BR")
 {
-	setTimeout(() => {  switchPt();}, 200);
+	setTimeout(() => {  switchPt();}, 2);
 	console.clear
 	console.clear !== 'undefined'
 }
