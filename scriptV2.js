@@ -34,9 +34,7 @@ lng = navigator.language;
 console.log("page language:",lng);
 if (lng == "pt-BR")
 {
-	setTimeout(() => {  switchPt();}, 2);
-	console.clear
-	console.clear !== 'undefined'
+	setTimeout(() => {  switchPt();}, 200);
 }
 
 //Change Page:
