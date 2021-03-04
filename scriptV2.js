@@ -89,3 +89,29 @@ function closePopup()
 	setTimeout(squeezeBox, 1);
 	setTimeout(hideBox, 300);
 }
+
+//Open Post:
+var postButtonClicked = document.getElementsByClassName("postsBut");
+var postOpened=0;
+function openPost(postNum)
+{
+	for (i=0; i<postButtonClicked.length; i++)
+	{
+		postButtonClicked[i].setAttribute("style", "display: none");
+	}
+	document.getElementById("pb"+postNum).setAttribute("style", "display: block;margin-left: 158px;");
+	document.getElementById("p"+postNum).setAttribute("style", "display: block;");
+	document.getElementById("close").setAttribute("style", "display: block;");
+	postOpened = postNum;
+}
+function closePosts()
+{
+	for (i=0; i<postButtonClicked.length; i++)
+	{
+		postButtonClicked[i].setAttribute("style", "display: block;margin-left: 2px;");
+	}
+	document.getElementById("close").setAttribute("style", "display: none;");
+	document.getElementById("p"+postOpened).setAttribute("style", "display: none;");
+	postOpened = 0;
+}
+
