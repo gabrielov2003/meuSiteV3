@@ -11,6 +11,7 @@
     <script src="scriptV2.js"></script>
 	<script src="postsV2.js"></script>
 	<div id="contents">
+		<div id="darkBox"></div>
 		<div class="logo">
 		  <img src="images/logo.jp2" width=300px height=105px >
 		</div>
@@ -35,7 +36,7 @@
 					<p class="pt" style="color:white;margin-left:180px;font-size:20px">Estudante de Sistema de Informação</p><p class="ing" style="color:white;margin-left:180px;font-size:25px">Information System Student</p>
 					<div style="background-color:rgb(97,165, 216);border-radius: 90px;width:280px;height:4px;opacity: 0.4;margin-left:260px;margin-top:10px;"></div>
 					<div style="background-color:rgb(97,165, 216);border-radius: 90px;width:260px;height:4px;opacity: 0.4;margin-left:270px;margin-top:5px;"></div>
-					<div class="bio"><p class="pt">Cursando Sistema de Informação na FIAP (Unidade Paulista), paulistano, apaixonado por tecnologias. Com conhecimento em Unity3d, uso de Arduino em C++ e desenvolvimento web em HTML/CSS/JS. Caso você queira saber mais, <u onmousedown="openPage(2)" style="cursor:pointer;">clique aqui</u> ou dê uma olhada na aba <u onmousedown="openPage(3)" style="cursor:pointer;">posts</u></p><p class="ing">Gabriel is studying Information System at FIAP, he was born in São Paulo and passionate about technologies. He has skills in Unity3d, usage of Arduino with C++ and web development in HTML/CSS/JS. If you want to know more either <u onmousedown="openPage(2)" style="cursor:pointer;">click here</u> or take a look on the <u onmousedown="openPage(3)" style="cursor:pointer;">posts tab</u>.</p></div>
+					<div class="bio"><p class="pt">Cursando Sistema de Informação na FIAP (Unidade Paulista), paulistano, apaixonado por tecnologias. Com conhecimento em Unity3d, uso de Arduino em C++ e desenvolvimento web em HTML/CSS/JS. Caso você queira saber mais, <u onmousedown="openPage(2)" style="cursor:pointer;">clique aqui.</u></p><p class="ing">Gabriel is studying Information System at FIAP, he was born in São Paulo and passionate about technologies. He has skills in Unity3d, usage of Arduino with C++ and web development in HTML/CSS/JS. If you want to know more just <u onmousedown="openPage(2)" style="cursor:pointer;">click here.</u></p></div>
 					<div style="background-color:rgb(97,165, 216);border-radius: 90px;width:480px;height:4px;opacity: 0.4;margin-left:70px;margin-top:15px;"></div>
 					<div style="background-color:rgb(97,165, 216);border-radius: 90px;width:460px;height:4px;opacity: 0.4;margin-left:80px;margin-top:6px;"></div>
 					<div class="info" id="inf"><p class="pt">NOME: Gabriel Ovidio Vieira<br>DATA DE NASCIMENTO: 08/08/2003 (<text id="id01">Old Heading</text> anos)<br>EMAIL: gabrielov2003@gmail.com<br>NACIONALIDADE: Brasileiro<br>LÍNGUA: Português e Inglês</p><p class="ing">NAME: Gabriel Ovidio Vieira<br>DATE OF BIRTH: 08/08/2003 (<text id="id02">Old Heading</text> years old)<br>EMAIL: gabrielov2003@gmail.com<br>NATIONALITY: Brazilian<br>LANGUAGE: Portuguese and English</p></div>
@@ -84,26 +85,33 @@
 			  </div>
 			</li>
 			  <!--Page 3:-->
-			  <!-- Change all the three @ to the number of the post
+			  <!-- Change all the three @ to the number of the post and add jp2 image:
+				
 				<div class="postsBut" id="pb@" onclick="openPost(@)">
+					<img src="posts/.jp2" width=286px height=100px style="margin-top: 10px;" >
 					<p class="postTitle" style="margin-top: 20px;margin-bottom: 20px;">TITULO TESTE1</p>
 				</div>
 				<div class="postContent" id="p@">
 					Teste
 				</div>
+
+				<img src="posts/.jp2" onclick="zoomPic(this);" width=470px height=340px>
 			  -->
 			<li onclick="openPage(3)" id="but3">
 			  <input type="radio" name="tabs" class="rd_tabs" id="tab3">
 			  <label id="label3" for="tab3" class="tabBut"> <p class="pt">POSTAGENS</p><p class="ing">POSTS</p> <img class="butIcon" src="images/iconPosts.jp2" width=75px height=45px > </label>
 			  <div class="content" id="tabpage_3">
-				<div class="closeBut" id="close" onclick="closePosts()" style="display:none;"></div>
+				<div class="closeBut" id="close" onclick="closePosts()" style="display:none;"><img src="posts/close.jp2" width=50px height=50px style="margin-top:3px"></div>
 				<div class="postsBut" id="pb1" onclick="openPost(1)">
-					<p class="postTitle" style="margin-top: 20px;margin-bottom: 20px;">TITULO TESTE1</p>
+					<img src="posts/fiap.jp2" width=286px height=100px style="margin-top: 10px;" >
+					<p class="postTitle" style="margin-top: 20px;margin-bottom: 20px;">NANO COURSES</p>
 				</div>
-				<div class="postContent" id="p1">
-					Teste1
-				</div>
+				<div class="postContent" id="p1"><br>
+					<p class="pt">Na faculdade de sistema de informação da FIAP, os alunos tem acesso a diversos cursos do qual liberam provas ao terminar todas as aulas, nesta prova se o aluno tirar mais de 70% ele recebe um certificado de conclusão do curso, então decidi deixar anexado todos os meu certificados neste post.</p><p class="ing">Every Information System Student at FIAP has access to multiples courses wich at the end has a final test, if the student scores more than 70% he receives a certification of conclusion of the course, so I will attach all my certificates on this post. </p>
+					<img src="posts/nano1.jp2" onclick="zoomPic(this);" width=470px height=340px>
+				<br></div>
 				<div class="postsBut" id="pb2" onclick="openPost(2)">
+					<img type="checkbox" src="posts/.jp2" width=286px height=100px style="margin-top: 10px;" >
 					<p class="postTitle" style="margin-top: 20px;margin-bottom: 20px;">TITULO TESTE2</p>
 				</div>
 				<div class="postContent" id="p2">
