@@ -27,9 +27,9 @@
 		<nav class="nav_tabs">
 		  <ul>
 			  <!--Page 1:-->
-			<li onclick="openPage(1)" id="but1">
+			<li id="but1">
 			  <input type="radio" name="tabs" class="rd_tabs" id="tab1">
-			  <label id="label1" for="tab1" class="tabBut"> <p class="pt" id="pt">PERFIL</p><p class="ing" id="ing">PROFILE</p> <img class="butIcon" src="images/iconProfile.jp2" width=75px height=45px ></label>
+			  <label id="label1" onclick="openPage(1)" for="tab1" class="tabBut"> <p class="pt" id="pt">PERFIL</p><p class="ing" id="ing">PROFILE</p> <img class="butIcon" src="images/iconProfile.jp2" width=75px height=45px ></label>
 			  <div class="content" id="tabpage_1">
 				<div class="profileBox">
 					<p style="color:white;font-weight:bold;font-size:33px;margin-left:180px;margin-top:30px;">GABRIEL VIEIRA</p>
@@ -66,9 +66,9 @@
 			  </div>
 			</li>
 			  <!--Page 2:-->
-			<li onclick="openPage(2)" id="but2">
+			<li id="but2">
 			  <input type="radio" name="tabs" class="rd_tabs" id="tab2">
-			  <label id="label2" for="tab2" class="tabBut"> <p class="pt">RESUMO</p><p class="ing">RESUME</p> <img class="butIcon" src="images/iconResume.jp2" width=75px height=45px > </label>
+			  <label id="label2" onclick="openPage(2)" for="tab2" class="tabBut"> <p class="pt">RESUMO</p><p class="ing">RESUME</p> <img class="butIcon" src="images/iconResume.jp2" width=75px height=45px > </label>
 			  <div class="content" id="tabpage_2">
 				<div class="mamTop"><p class="pt">MAIS SOBRE MIM</p><p class="ing">MORE ABOUT ME</p></div>
 				<div class="mamBottom">
@@ -97,9 +97,9 @@
 
 				<img src="posts/.jp2" onclick="zoomPic(this);" width=470px height=340px>
 			  -->
-			<li onclick="openPage(3)" id="but3">
+			<li id="but3">
 			  <input type="radio" name="tabs" class="rd_tabs" id="tab3">
-			  <label id="label3" for="tab3" class="tabBut"> <p class="pt">POSTAGENS</p><p class="ing">POSTS</p> <img class="butIcon" src="images/iconPosts.jp2" width=75px height=45px > </label>
+			  <label id="label3" onclick="openPage(3)" for="tab3" class="tabBut"> <p class="pt">POSTAGENS</p><p class="ing">POSTS</p> <img class="butIcon" src="images/iconPosts.jp2" width=75px height=45px > </label>
 			  <div class="content" id="tabpage_3">
 				<div class="closeBut" id="close" onclick="closePosts()" style="display:none;"><img src="posts/close.jp2" width=50px height=50px style="margin-top:3px"></div>
 				<div class="postsBut" id="pb1" onclick="openPost(1)">
@@ -107,7 +107,7 @@
 					<p class="postTitle" style="margin-top: 20px;margin-bottom: 20px;">NANO COURSES</p>
 				</div>
 				<div class="postContent" id="p1"><br>
-					<p class="pt">Na faculdade de sistema de informação da FIAP, os alunos tem acesso a diversos cursos do qual liberam provas ao terminar todas as aulas, nesta prova se o aluno tirar mais de 70% ele recebe um certificado de conclusão do curso, então decidi deixar anexado todos os meu certificados neste post.</p><p class="ing">Every Information System Student at FIAP has access to multiples courses wich at the end has a final test, if the student scores more than 70% he receives a certification of conclusion of the course, so I will attach all my certificates on this post. </p>
+					<p class="pt">Na faculdade de sistema de informação da FIAP, os alunos têm acesso a diversos cursos do qual liberam provas ao terminar todas as aulas, nesta prova se o aluno tirar mais de 70% ele recebe um certificado de conclusão do curso, então decidi deixar anexado todos os meu certificados neste post.</p><p class="ing">Every Information System Student at FIAP has access to multiple courses which at the end has a final test, if the student scores more than 70% he receives a certification of conclusion of the course, so I will attach all my certificates on this post. </p>
 					<img src="posts/nano1.jp2" onclick="zoomPic(this);" width=470px height=340px>
 				<br></div>
 				<div class="postsBut" id="pb2" onclick="openPost(2)">
@@ -120,9 +120,9 @@
 			  </div>
 			</li>
 			  <!--Page 4:-->
-			<li onclick="openPage(4)" id="but4">
+			<li id="but4">
 			  <input type="radio" name="tabs" class="rd_tabs" id="tab4">
-			  <label id="label4" for="tab4" class="tabBut"> <p class="pt">CONTATO</p><p class="ing">CONTACT</p> <img class="butIcon" src="images/iconContact.jp2" width=75px height=45px > </label>
+			  <label id="label4" onclick="openPage(4)" for="tab4" class="tabBut"> <p class="pt">CONTATO</p><p class="ing">CONTACT</p> <img class="butIcon" src="images/iconContact.jp2" width=75px height=45px > </label>
 			  <div class="content" id="tabpage_4">
 				<nav class="contactOptions">
 					<ul>

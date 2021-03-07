@@ -1,3 +1,6 @@
+var esteAnterior="";//Para funcao de zoom da imagem
+var picOpened=false;//Para funcao de zoom da imagem
+var postOpened=0;//Post aberto
 //Page zoom:
 document.body.style.zoom = 1.1;
 
@@ -45,14 +48,13 @@ function openPage(pageOpened)
 {
 	if (pageOpened != lastPage)
 	{
+		closePic();
 		closeAll();
 		document.getElementById("tabpage_"+pageOpened).setAttribute("style", "display: block");
 		document.getElementById("label"+pageOpened).setAttribute("style", "background-color: rgb(31, 71, 87)");
 		document.getElementById("welcomeText").setAttribute("style", "display: none");
-		closePic();
 	}
 }
-
 //Close All Pages
 function closeAll()
 {
@@ -64,6 +66,7 @@ function closeAll()
 	document.getElementById("label2").setAttribute("style", "background-color: rgb(97,165, 216)");
 	document.getElementById("label3").setAttribute("style", "background-color: rgb(97,165, 216)");
 	document.getElementById("label4").setAttribute("style", "background-color: rgb(97,165, 216)");
+	closePosts();
 }
 
 //Copy My Email Popup
@@ -95,7 +98,6 @@ function closePopup()
 
 //Open and close Posts:
 var postButtonClicked = document.getElementsByClassName("postsBut");
-var postOpened=0;
 function openPost(postNum)
 {
 	for (i=0; i<postButtonClicked.length; i++)
@@ -114,19 +116,17 @@ function closePosts()
 		postButtonClicked[i].setAttribute("style", "display: block;margin-left: 2px;");
 	}
 	document.getElementById("close").setAttribute("style", "display: none;");
-	document.getElementById("p"+postOpened).setAttribute("style", "display: none;");
+	if(postOpened!=0)
+	{document.getElementById("p"+postOpened).setAttribute("style", "display: none;");}
 	postOpened = 0;
 	closePic();
 }
 
 //Zoom Picture:
 
-var picOpened=false;
-var esteAnterior;
 function zoomPic(este)
 {
-	console.log(este);
-	if (picOpened == 0)
+	if (picOpened == false)
 	{
 		este.setAttribute("style", "transform: scale(1.8);-ms-transform: scale(1.8);-webkit-transform: scale(1.8);cursor: zoom-out;");
 		picOpened = true;
@@ -148,11 +148,15 @@ function zoomPic(este)
 		}
 	}
 }
-function closePic()
+function closePic(teste)
 {
-	
-	//esteAnterior.setAttribute("style", "transform: scale(1);-ms-transform: scale(1);-webkit-transform: scale(1);cursor: zoom-in;");
-	//picOpened=false;
-	//esteAnterior="";
+	if (picOpened==true)
+	{
+		esteAnterior.setAttribute("style", "transform: scale(1);-ms-transform: scale(1);-webkit-transform: scale(1);cursor: zoom-in;");
+		picOpened=false;
+		esteAnterior="";
+		console.log("vtnc")
+	}
 }
+
 
