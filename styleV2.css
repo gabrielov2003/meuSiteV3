@@ -414,3 +414,24 @@ textarea
   box-shadow:0px 0px 20px #333;
   background-color: rgb(97,165, 216);
 }
+#status
+{
+  width: 60%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(131 165 82 / 84%);
+  margin-left: 50px;
+  margin-bottom: -4;
+}
+#statusError
+{
+  width: 60%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(250, 129, 92);
+  margin-left: 50px;
+}
