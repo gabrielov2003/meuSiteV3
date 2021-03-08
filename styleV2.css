@@ -259,6 +259,10 @@ body
   cursor: zoom-in;
   transition: transform .2s;
 }
+.postContent video
+{
+  margin: 10px
+}
 /*.postContent img:active
 {
   transform: scale(1.5);
