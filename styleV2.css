@@ -250,7 +250,8 @@ body
 }
 .postContent p
 {
-  margin:10px;
+  margin:20px;
+  margin-top: 10px;
 }
 .postContent img
 {
