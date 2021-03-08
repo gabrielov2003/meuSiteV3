@@ -159,4 +159,23 @@ function closePic(teste)
 	}
 }
 
+//Open Email Box
+
+function openEmailBox ()
+{
+	var contactButtons = document.getElementsByClassName("contactOptions");
+	var emailBox = document.getElementsByClassName("emailBox")
+	contactButtons[0].setAttribute("style", "display:none;");
+	emailBox[0].setAttribute("style", "display:block;");
+	document.getElementById("closeMessage").setAttribute("style", "display: block;");
+}
+function closeMessage()
+{
+	var contactButtons = document.getElementsByClassName("contactOptions");
+	var emailBox = document.getElementsByClassName("emailBox")
+	contactButtons[0].setAttribute("style", "display:block;");
+	emailBox[0].setAttribute("style", "display:none;");
+	document.getElementById("closeMessage").setAttribute("style", "display: none;");
+}
+
 

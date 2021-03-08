@@ -9,7 +9,6 @@
   </head>
   <body>
     <script src="scriptV2.js"></script>
-	<script src="postsV2.js"></script>
 	<div id="contents">
 		<div id="darkBox"></div>
 		<div class="logo">
@@ -145,10 +144,26 @@
 						<li><a style="text-decoration:none" href="https://github.com/gabrielov2003" target="_blank"><label class="contactBut">GITHUB<img class="butIcon" src="images/githubBut.jp2" width=75px height=45px ></label></a></li>
 						<li><a style="text-decoration:none" href="https://www.linkedin.com/in/gabriel-ovidio-vieira-a383b21a6/" target="_blank"><label class="contactBut">LINKEDIN<img class="butIcon" src="images/linkedinBut.jp2" width=75px height=45px ></label></a></li>
 						<li><a style="text-decoration:none" href="https://www.freelancer.com/u/gabrielov2003" target="_blank"><label class="contactBut">FREELANCER<img class="butIcon" src="images/freelancerBut.jp2" width=75px height=45px ></label></a></li>
-						<li><label class="contactBut" onclick="copyEmail()">EMAIL<img class="butIcon" src="images/emailBut.jp2" width=75px height=45px ></label></li>
+						<li><label class="contactBut" onclick="openEmailBox()">EMAIL<img class="butIcon" src="images/emailBut.jp2" width=75px height=45px ></label></li>
 						<input type="text" value="gabrielov2003@gmail.com" id="myInput" style="display:none;"></input>
 					</ul>
 				</nav>
+				<form action="https://formspree.io/f/xdopqkek" method="POST" class="emailBox"><br>
+					<div class="closeBut2" id="closeMessage" onclick="closeMessage()" style="display:none;"><img src="posts/close.jp2" width=50px height=50px style="margin-top:3px"></div>
+					<div class="form-group">
+						<p class="pt">Nome:</p><p class="ing">Name:</p>
+						<input type="text" name="name" required><br>
+					</div>
+					<div class="form-group">
+						<p class="pt">Email:</p><p class="ing">Email:</p>
+						<input type="email" name="_replyto" required><br>
+					</div>
+					<div class="form-group">
+						<p class="pt">Mensagem:</p><p class="ing">Message:</p>
+						<textarea name="mensagem" rows="3" cols="30" required></textarea><br>
+					</div>
+						<button type="submit" class="send-message"><p class="pt">ENVIAR</p><p class="ing">SUBMIT</p></button><br>
+				  </form>
 			  </div>
 		  </ul>
 		</nav>
