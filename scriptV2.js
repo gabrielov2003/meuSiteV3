@@ -5,8 +5,6 @@ var skillOpened = 0; //Skill aberta
 var mainPage;
 var contactPage;
 
-//Page zoom:
-document.body.style.zoom = 1.1;
 
 // Language Switch:
 
@@ -94,9 +92,9 @@ window.onscroll = function () {
 function myFunction() {
 	goup = document.getElementsByClassName("go-up");
 	if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-		goup[0].setAttribute("style", "bottom:5px;");
+		goup[0].setAttribute("style", "bottom:5px;absolute;z-index:1000000;");
 	} else {
-		goup[0].setAttribute("style", "bottom:-120px;");
+		goup[0].setAttribute("style", "bottom:-120px;absolute;z-index:1000000;");
 	}
 }
 
