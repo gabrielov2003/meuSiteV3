@@ -158,7 +158,6 @@ function closeSkill() {
 var postButtonClicked = document.getElementsByClassName("posts-but");
 
 function openPost(postNum) {
-	console.log("p" + postNum);
 	for (i = 0; i < postButtonClicked.length; i++) {
 		postButtonClicked[i].setAttribute("style", "display: none;");
 	}
@@ -206,7 +205,6 @@ function closePic() {
 		esteAnterior.setAttribute("style", "transform: scale(1);-ms-transform: scale(1);-webkit-transform: scale(1);cursor: zoom-in;");
 		picOpened = false;
 		esteAnterior = "";
-		console.log("vtnc")
 	}
 }
 
