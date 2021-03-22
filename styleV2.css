@@ -116,6 +116,17 @@ body {
   display: none;
 }
 
+.go-up {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  background-color: rgba(32, 41, 66, 1);
+  bottom: -120px;
+  margin-left: 5px;
+  transition:bottom linear .2s;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1229px) {
   #nav-tabs {
     display: none;
@@ -123,6 +134,28 @@ body {
 
   #nav-tabMobile {
     display: flex;
+  }
+  .go-up{
+    width: 100px;
+    height: 100px;
+  }
+  .go-up img{
+    width: 100px;
+    height: 100px;
+  }
+  #contactOptions ul {
+    width: 320px;
+    margin-left: 40px;
+  }
+  .bio{
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .skills-desc p{
+    font-size: 22px;
+  }
+  #buttons-list ul li{
+    font-size: 22px;
   }
 }
 
@@ -195,17 +228,6 @@ body {
   width: 100px;
   height: 5px;
   background-color: #c1c8db;
-}
-
-.go-up {
-  width: 70px;
-  height: 70px;
-  position: fixed;
-  background-color: rgba(32, 41, 66, 1);
-  bottom: -120px;
-  margin-left: 5px;
-  transition: linear .2s;
-  cursor: pointer;
 }
 
 .main-content {
@@ -469,21 +491,25 @@ body {
 }
 
 .contactOptions {
-  margin-left: 150px;
   margin-top: 10px;
   position: relative;
   align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .contactOptions ul {
   list-style: none;
+  display:block;
+  height: 10px;
 }
 
 .contactOptions ul li {
   align-items: center;
   text-align: left;
   float: left;
-  margin-bottom: 13%;
+  margin-bottom: 10px;
   font-size: 18px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
 }

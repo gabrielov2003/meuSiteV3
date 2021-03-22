@@ -5,6 +5,8 @@ var skillOpened = 0; //Skill aberta
 var mainPage;
 var contactPage;
 
+//Page zoom:
+document.body.style.zoom = 1.1;
 
 // Language Switch:
 
@@ -46,7 +48,7 @@ if (lng == "pt-BR") {
 function scrollProfile() {
 	closeContact();
 	document.getElementById("perfil").scrollIntoView();
-	window.scrollBy(0, 100);
+	setTimeout(function(){window.scrollBy(0, 100);}, 10)
 }
 
 function scrollResume() {
@@ -57,7 +59,7 @@ function scrollResume() {
 function scrollSkills() {
 	closeContact();
 	document.getElementById("compt").scrollIntoView();
-	window.scrollBy(0, -100);
+	setTimeout(function(){window.scrollBy(0, -100);}, 10)
 }
 
 function scrollPortf() {
@@ -109,7 +111,7 @@ function openEmailBox() {
 function closeMessage() {
 	var contactButtons = document.getElementsByClassName("contactOptions");
 	var emailBox = document.getElementsByClassName("emailBox")
-	contactButtons[0].setAttribute("style", "display:block;");
+	contactButtons[0].setAttribute("style", "display:flex;");
 	emailBox[0].setAttribute("style", "display:none;");
 	document.getElementById("closeMessage").setAttribute("style", "display: none;");
 }
