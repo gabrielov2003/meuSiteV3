@@ -48,7 +48,7 @@ if (lng == "pt-BR") {
 function scrollProfile() {
 	closeContact();
 	document.getElementById("perfil").scrollIntoView();
-	setTimeout(function(){window.scrollBy(0, 100);}, 10)
+	//setTimeout(function(){window.scrollBy(0, 100);}, 10)
 }
 
 function scrollResume() {
@@ -59,7 +59,7 @@ function scrollResume() {
 function scrollSkills() {
 	closeContact();
 	document.getElementById("compt").scrollIntoView();
-	setTimeout(function(){window.scrollBy(0, -100);}, 10)
+	//setTimeout(function(){window.scrollBy(0, -100);}, 10)
 }
 
 function scrollPortf() {
@@ -94,9 +94,9 @@ window.onscroll = function () {
 function myFunction() {
 	goup = document.getElementsByClassName("go-up");
 	if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
-		goup[0].setAttribute("style", "bottom:5px;absolute;z-index:1000000;");
+		goup[0].setAttribute("style", "bottom:5px;absolute;z-index:1000001;");
 	} else {
-		goup[0].setAttribute("style", "bottom:-120px;absolute;z-index:1000000;");
+		goup[0].setAttribute("style", "bottom:-120px;absolute;z-index:1000001;");
 	}
 }
 
