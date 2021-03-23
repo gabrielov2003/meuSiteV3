@@ -173,6 +173,23 @@ body {
   margin: 10px
 }
 
+.emailBox {
+  width: 305px;
+  background-color: rgba(32, 41, 66, 1);
+  display: none;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px #333;
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+}
+.emailDiv{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 @media screen and (max-width: 1229px) {
   #nav-tabs {
     display: none;
@@ -216,6 +233,9 @@ body {
   }
   .skillsCotent{
     width: 99%;
+  }
+  .emailBox{
+    margin-left: 50px;
   }
 }
 
@@ -586,18 +606,7 @@ body {
 
 /*Popup end*/
 
-.emailBox {
-  width: 305px;
-  background-color: rgba(32, 41, 66, 1);
-  display: none;
-  margin-left: 30vw;
-  margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 20px #333;
-  margin-bottom: 20px;
-  align-items: center;
-  text-align: center;
-}
+
 
 .form-group {
   width: 90%;

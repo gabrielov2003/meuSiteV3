@@ -44,7 +44,6 @@ if (lng == "pt-BR") {
 }
 
 //Scroll Profile //Mudar conforme lingua
-
 function scrollProfile() {
 	closeContact();
 	document.getElementById("perfil").scrollIntoView();
@@ -72,7 +71,7 @@ function scrollContact() {
 	mainPage[0].style.display = "none";
 	contactPage = document.getElementsByClassName("contact-page");
 	contactPage[0].style.display = "block";
-	navToggle()
+	navClose()
 }
 
 function closeContact() {
@@ -80,7 +79,7 @@ function closeContact() {
 	mainPage[0].style.display = "block";
 	contactPage = document.getElementsByClassName("contact-page");
 	contactPage[0].style.display = "none";
-	navToggle()
+	navClose()
 }
 
 function scrollUp() {
@@ -127,6 +126,14 @@ function navToggle() {
 		listOpened = false;
 		document.getElementById("buttons-list").setAttribute("style", "display: none;");
 	}
+}
+function navClose(){
+	listOpened = false;
+	document.getElementById("buttons-list").setAttribute("style", "display: none;");
+}
+function navOpen(){
+	listOpened = true;
+	document.getElementById("buttons-list").setAttribute("style", "display: block;");
 }
 
 //Open and close Posts/Skills:
