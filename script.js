@@ -127,11 +127,13 @@ function navToggle() {
 		document.getElementById("buttons-list").setAttribute("style", "display: none;");
 	}
 }
-function navClose(){
+
+function navClose() {
 	listOpened = false;
 	document.getElementById("buttons-list").setAttribute("style", "display: none;");
 }
-function navOpen(){
+
+function navOpen() {
 	listOpened = true;
 	document.getElementById("buttons-list").setAttribute("style", "display: block;");
 }
@@ -146,6 +148,7 @@ function openSkill(skillNum) {
 	document.getElementById("s" + skillNum).setAttribute("style", "display: block;");
 	close = document.getElementsByClassName("closeBut");
 	close[0].setAttribute("style", "display: block;");
+	scrollSkills()
 	skillOpened = skillNum;
 }
 
@@ -171,6 +174,7 @@ function openPost(postNum) {
 	document.getElementById("p" + postNum).setAttribute("style", "display: block;");
 	close = document.getElementsByClassName("closeBut");
 	close[1].setAttribute("style", "display: block;");
+	scrollPortf()
 	postOpened = postNum;
 }
 

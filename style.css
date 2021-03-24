@@ -123,7 +123,7 @@ body {
   background-color: rgba(32, 41, 66, 1);
   bottom: -120px;
   margin-left: 5px;
-  transition:bottom linear .2s;
+  transition: bottom linear .2s;
   cursor: pointer;
 }
 
@@ -139,12 +139,14 @@ body {
   margin-right: 5px;
   margin-top: 10px;
 }
+
 .but-title {
   font-weight: bold;
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .skills-desc {
   display: none;
   width: 550px;
@@ -184,7 +186,8 @@ body {
   align-items: center;
   text-align: center;
 }
-.emailDiv{
+
+.emailDiv {
   display: flex;
   width: 100%;
   justify-content: center;
@@ -198,55 +201,69 @@ body {
   #nav-tabMobile {
     display: flex;
   }
-  .go-up{
+
+  .go-up {
     width: 100px;
     height: 100px;
   }
-  .go-up img{
+
+  .go-up img {
     width: 100px;
     height: 100px;
   }
+
   #contactOptions ul {
     width: 320px;
     margin-left: 40px;
   }
-  #bio{
+
+  #bio {
     font-size: 27px;
     width: 600px;
     margin-left: 20px;
   }
-  .skills-desc{
+
+  .skills-desc {
     width: 100%;
     margin-left: 0px;
   }
-  .skills-desc p{
+
+  .skills-desc p {
     font-size: 22px;
   }
-  #buttons-list ul li{
+
+  #buttons-list ul li {
     font-size: 22px;
   }
-  .skills-but{
+
+  .skills-but {
     width: 99%;
   }
-  .but-title{
+
+  .but-title {
     font-size: 25px;
   }
-  .skillsCotent{
+
+  .skillsCotent {
     width: 99%;
   }
-  .emailBox{
+
+  .emailBox {
     margin-left: 50px;
   }
-  .bPt{
+
+  .bPt {
     width: 90px;
     height: 70px;
     margin-left: 96px;
   }
-  .bIng{
+
+  .bIng {
     width: 90px;
     height: 70px;
   }
-  .lgb button img{
+
+  .lgb button img {
     width: 80px;
     height: 60px;
   }
@@ -498,6 +515,7 @@ body {
   text-align: center;
   align-items: center;
   font-size: 17px;
+  margin-bottom: 100px;
 }
 
 .posts-box {
@@ -535,7 +553,6 @@ body {
   margin-left: 2px;
   margin-right: 5px;
   margin-top: 10px;
-  margin-bottom: 100px;
 }
 
 
@@ -552,7 +569,7 @@ body {
 
 .contactOptions ul {
   list-style: none;
-  display:block;
+  display: block;
   height: 10px;
 }
 
