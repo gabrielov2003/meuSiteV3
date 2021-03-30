@@ -15,12 +15,6 @@ body {
   zoom: 1.1;
 }
 
-@media (max-width: 540px) {
-  body {
-    font-size: 18px !important;
-  }
-}
-
 /*divs (eu acho)*/
 * {
   margin: 0;
