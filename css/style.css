@@ -15,6 +15,12 @@ body {
   zoom: 1.1;
 }
 
+@media (max-width: 540px) {
+  body {
+    font-size: 18px !important;
+  }
+}
+
 /*divs (eu acho)*/
 * {
   margin: 0;
@@ -22,7 +28,7 @@ body {
   width: auto;
 }
 
-u{
+u {
   cursor: pointer;
 }
 
@@ -185,7 +191,7 @@ u{
   background-color: #c1c8db;
 }
 
-#but5{
+#but5 {
   margin-bottom: 10px;
 }
 
@@ -199,7 +205,7 @@ u{
   display: flex;
   margin-top: 80px;
   z-index: 100;
-  display:none;
+  display: none;
 }
 
 #buttons-list ul {
@@ -224,23 +230,23 @@ u{
   width: 100%;
   background-color: #333;
   background-repeat: no-repeat;
-  background-image:url(../images/fundo.jp2);
+  background-image: url(../images/fundo.jp2);
   background-size: 100% 100%;
   height: 92vh;
   color: aliceblue;
   text-align: center;
 }
 
-.page-title{
-  margin:50px;
-  margin-top:100px;
-  font-weight:bold;
+.page-title {
+  margin: 50px;
+  margin-top: 100px;
+  font-weight: bold;
   font-size: 30px;
   color: rgb(48, 48, 48);
 }
 
-.first-box img{
-  margin-top:12vh;
+.first-box img {
+  margin-top: 12vh;
 }
 
 .name-title {
@@ -435,9 +441,9 @@ u{
   display: none;
 }
 
-.close-but img{
-  margin-top:9px;
-  margin-left:2px;
+.close-but img {
+  margin-top: 9px;
+  margin-left: 2px;
 }
 
 .but-icon {
@@ -458,7 +464,7 @@ u{
   margin-top: 10px;
 }
 
-.posts-but img{
+.posts-but img {
   margin-top: 10px;
 }
 
@@ -493,7 +499,7 @@ u{
 }
 
 
-#close-message{
+#close-message {
   position: absolute;
   cursor: pointer;
   margin-left: -70px;
@@ -504,17 +510,17 @@ u{
   background-color: rgba(32, 41, 66, 1);
 }
 
-.contact-bar{
+.contact-bar {
   width: 100%;
-  cursor:pointer;
-  margin-bottom:10px;
+  cursor: pointer;
+  margin-bottom: 10px;
   background-color: rgba(32, 41, 66, 0.534);
-  z-index:1000000;
-  position:absolute;
+  z-index: 1000000;
+  position: absolute;
 }
 
-.contact-bar p{
-  padding:5px;
+.contact-bar p {
+  padding: 5px;
 }
 
 .contact-box {
@@ -524,19 +530,19 @@ u{
   margin-bottom: 10px;
 }
 
-.about-me{
+.about-me {
   margin-left: -50px;
 }
 
-#status-error{
-  display:none;
-}
-
-#status{
+#status-error {
   display: none;
 }
 
-#my-input{
+#status {
+  display: none;
+}
+
+#my-input {
   display: none;
 }
 
@@ -563,8 +569,9 @@ u{
   font-size: 18px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
 }
+
 .contact-options ul li a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
 #down-but {

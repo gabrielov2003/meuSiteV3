@@ -268,7 +268,7 @@ function ajax(method, url, data, success, error) {
 }
 //Contact Form End
 
-function closeStatus(){
+function closeStatus() {
 	document.getElementById("status-error").style.display = "none";
 	document.getElementById("status").style.display = "none";
 }
