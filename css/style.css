@@ -144,15 +144,6 @@ u {
   position: absolute;
 }
 
-.bar-select-list {
-  transition: 0.2s linear;
-  height: 0px;
-  width: 0px;
-  left: 50%;
-  margin-left: -50px;
-  margin-top: -6px;
-  position: absolute;
-}
 
 #but1:hover #bar1 {
   width: 100px;
@@ -231,8 +222,9 @@ u {
 }
 
 .page-title {
-  margin: 50px;
+  margin-bottom: 50px;
   margin-top: 100px;
+  width: 100%;
   font-weight: bold;
   font-size: 30px;
   color: rgb(48, 48, 48);
@@ -355,7 +347,6 @@ u {
   display: none;
   width: 550px;
   margin-top: 20px;
-  margin-left: 25px;
   text-align: center;
   font-weight: bold;
   background-color: rgba(32, 41, 66, 1);
@@ -395,7 +386,8 @@ u {
   background-color: rgba(255, 0, 0, 0);
   display: block;
   height: auto;
-  width: 626px;
+  width: auto;
+  max-width: 626px;
   text-align: center;
   align-items: center;
   font-size: 17px;
@@ -427,7 +419,7 @@ u {
 .close-but {
   border-radius: 12px;
   cursor: pointer;
-  margin-left: 280px;
+  margin-left: 245px;
   width: 59px;
   height: 59px;
   background-color: rgba(32, 41, 66, 1);
@@ -657,6 +649,10 @@ textarea {
     display: none;
   }
 
+  .posts-box{
+    width: 100%;
+  }
+
   #nav-tab-mobile {
     display: flex;
   }
@@ -669,6 +665,10 @@ textarea {
   .go-up img {
     width: 100px;
     height: 100px;
+  }
+
+  .close-but{
+    margin-left: 285px;
   }
 
   #contact-options ul {

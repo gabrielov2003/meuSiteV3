@@ -7,7 +7,7 @@ var contactPage;
 var p = document.getElementsByClassName("pt"); //Textos em pt
 var e = document.getElementsByClassName("ing"); //Textos em ing
 
-document.body.style.zoom = "1.1" 
+document.body.style.zoom = "1.1";
 
 // Language Switch:
 
@@ -273,3 +273,4 @@ function closeStatus() {
 	document.getElementById("status-error").style.display = "none";
 	document.getElementById("status").style.display = "none";
 }
+
