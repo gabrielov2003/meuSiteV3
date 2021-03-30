@@ -299,7 +299,8 @@ u {
   border-radius: 8px 8px 8px;
   text-align: left;
   height: auto;
-  width: 570px;
+  width: auto;
+  max-width: 670px;
   font-weight: bold;
   margin-bottom: 140px;
 }
@@ -308,7 +309,9 @@ u {
   vertical-align: middle;
   padding: 10px;
   margin-left: 18px;
-  width: 530px;
+  width: auto;
+  max-width: 730px;
+  font-size: 19px;
 }
 
 .fourth-box {
@@ -515,10 +518,6 @@ u {
   margin-bottom: 10px;
 }
 
-.about-me {
-  margin-left: -50px;
-}
-
 #status-error {
   display: none;
 }
@@ -669,6 +668,10 @@ textarea {
 
   .close-but{
     margin-left: 285px;
+  }
+
+  .mam-bottom p{
+    margin-left: 5px;
   }
 
   #contact-options ul {
