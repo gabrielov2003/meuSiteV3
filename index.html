@@ -1,121 +1,121 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="en">
 <html>
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0" />
 	<title>Gabriel Vieira's Website</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="./css/style.css" rel="stylesheet" type="text/css" />
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-	<script src="script.js"></script>
+	<script src="./javascript/script.js"></script>
 	<div id="contents">
-		<nav class="lgb">
-			<button id="bIng" class="bIng" onclick="switchEng()"><img src="images/usaFlag.jp2" width=60px
+		<nav class="lg-but">
+			<button id="ing-but" class="ing-but" onclick="switchEng()"><img src="images/usaFlag.jp2" width=60px
 					height=40px></button>
-			<button id="bPt" class="bPt" onclick="switchPt()"><img src="images/brazilFlag.jp2" width=61px
+			<button id="pt-but" class="pt-but" onclick="switchPt()"><img src="images/brazilFlag.jp2" width=61px
 					height=41px></button>
 			<!--  <p class="pt"></p><p class="ing"></p>   -->
 		</nav>
 		<div class="go-up" onclick="scrollUp()"><img src="images/upBut.jp2" width=70px height=70px></div>
-		<nav class="nav_tabs" id="nav-tabs">
+		<nav class="nav-tabs" id="nav-tabs">
 			<ul>
 				<li id="but1">
-					<input type="radio" name="tabs" class="rd_tabs" id="tab1">
-					<label id="label1" for="tab1" class="tabBut" onclick="scrollProfile()">
+					<input type="radio" name="tabs" class="rd-tabs" id="tab1">
+					<label id="label1" for="tab1" class="tab-but" onclick="scrollProfile()">
 						<p class="pt" id="pt">PERFIL</p>
 						<p class="ing" id="ing">PROFILE</p>
 					</label>
-					<div class="barSelect" id="bar1"></div>
+					<div class="bar-select" id="bar1"></div>
 				</li>
 				<li id="but2">
-					<input type="radio" name="tabs" class="rd_tabs" id="tab2">
-					<label id="label2" onclick="scrollResume()" for="tab2" class="tabBut">
+					<input type="radio" name="tabs" class="rd-tabs" id="tab2">
+					<label id="label2" onclick="scrollResume()" for="tab2" class="tab-but">
 						<p class="pt">RESUMO</p>
 						<p class="ing">RESUME</p>
 					</label>
-					<div class="barSelect" id="bar2"></div>
+					<div class="bar-select" id="bar2"></div>
 				</li>
 				<li id="but3">
-					<input type="radio" name="tabs" class="rd_tabs" id="tab3">
-					<label id="label3" onclick="scrollSkills()" for="tab3" class="tabBut">
+					<input type="radio" name="tabs" class="rd-tabs" id="tab3">
+					<label id="label3" onclick="scrollSkills()" for="tab3" class="tab-but">
 						<p class="pt">COMPETÊNCIAS</p>
 						<p class="ing">SKILLS</p>
 					</label>
-					<div class="barSelect" id="bar3"></div>
+					<div class="bar-select" id="bar3"></div>
 				</li>
 				<li id="but4">
-					<input type="radio" name="tabs" class="rd_tabs" id="tab4">
-					<label id="label4" onclick="scrollPortf()" for="tab4" class="tabBut">
+					<input type="radio" name="tabs" class="rd-tabs" id="tab4">
+					<label id="label4" onclick="scrollPortf()" for="tab4" class="tab-but">
 						<p class="pt">PORTFÓLIO</p>
 						<p class="ing">PORTFOLIO</p>
 					</label>
-					<div class="barSelect" id="bar4"></div>
+					<div class="bar-select" id="bar4"></div>
 				</li>
 				<li id="but5">
-					<input type="radio" name="tabs" class="rd_tabs" id="tab5">
-					<label id="label5" onclick="scrollContact()" for="tab5" class="tabBut">
+					<input type="radio" name="tabs" class="rd-tabs" id="tab5">
+					<label id="label5" onclick="scrollContact()" for="tab5" class="tab-but">
 						<p class="pt">CONTATO</p>
 						<p class="ing">CONTACT</p>
 					</label>
-					<div class="barSelect" id="bar5"></div>
+					<div class="bar-select" id="bar5"></div>
 				</li>
 			</ul>
 		</nav>
-		<div id="nav-tabMobile">
-			<nav class="nav_tabs">
+		<div id="nav-tab-mobile">
+			<nav class="nav-tabs">
 				<ul>
 					<li id="but1">
-						<input type="radio" name="tabs" class="rd_tabs" id="tab1">
-						<label id="label1" for="tab1" class="tabBut" onclick="navToggle()"><img
+						<input type="radio" name="tabs" class="rd-tabs" id="tab1">
+						<label id="label1" for="tab1" class="tab-but" onclick="navToggle()"><img
 								src="images/moreIcon.jp2" width=40px height=35px></label>
-						<div class="barSelect" id="bar1"></div>
+						<div class="bar-select" id="bar1"></div>
 					</li>
 				</ul>
 			</nav>
-			<nav id="buttons-list" style="display:none;">
+			<nav id="buttons-list">
 				<ul>
 					<li id="but1">
-						<input type="radio" name="tabs" class="rd_tabs" id="tab1">
-						<label id="label1" for="tab1" class="tabBut" onclick="scrollProfile()">
+						<input type="radio" name="tabs" class="rd-tabs" id="tab1">
+						<label id="label1" for="tab1" class="tab-but" onclick="scrollProfile()">
 							<p class="pt" id="pt">PERFIL</p>
 							<p class="ing" id="ing">PROFILE</p>
 						</label>
-						<div class="barSelectList" id="bar1"></div>
+						<div class="bar-select-list" id="bar1"></div>
 					</li>
 					<li id="but2">
-						<input type="radio" name="tabs" class="rd_tabs" id="tab2">
-						<label id="label2" onclick="scrollResume()" for="tab2" class="tabBut">
+						<input type="radio" name="tabs" class="rd-tabs" id="tab2">
+						<label id="label2" onclick="scrollResume()" for="tab2" class="tab-but">
 							<p class="pt">RESUMO</p>
 							<p class="ing">RESUME</p>
 						</label>
-						<div class="barSelectList" id="bar2"></div>
+						<div class="bar-select-list" id="bar2"></div>
 					</li>
 					<li id="but3">
-						<input type="radio" name="tabs" class="rd_tabs" id="tab3">
-						<label id="label3" onclick="scrollSkills()" for="tab3" class="tabBut">
+						<input type="radio" name="tabs" class="rd-tabs" id="tab3">
+						<label id="label3" onclick="scrollSkills()" for="tab3" class="tab-but">
 							<p class="pt">COMPETÊNCIAS</p>
 							<p class="ing">SKILLS</p>
 						</label>
-						<div class="barSelectList" id="bar3"></div>
+						<div class="bar-select-list" id="bar3"></div>
 					</li>
 					<li id="but4">
-						<input type="radio" name="tabs" class="rd_tabs" id="tab4">
-						<label id="label4" onclick="scrollPortf()" for="tab4" class="tabBut">
+						<input type="radio" name="tabs" class="rd-tabs" id="tab4">
+						<label id="label4" onclick="scrollPortf()" for="tab4" class="tab-but">
 							<p class="pt">PORTFÓLIO</p>
 							<p class="ing">PORTFOLIO</p>
 						</label>
-						<div class="barSelectList" id="bar4"></div>
+						<div class="bar-select-list" id="bar4"></div>
 					</li>
-					<li id="but5" style="margin-bottom: 10px;">
-						<input type="radio" name="tabs" class="rd_tabs" id="tab5">
-						<label id="label5" onclick="scrollContact()" for="tab5" class="tabBut">
+					<li id="but5">
+						<input type="radio" name="tabs" class="rd-tabs" id="tab5">
+						<label id="label5" onclick="scrollContact()" for="tab5" class="tab-but">
 							<p class="pt">CONTATO</p>
 							<p class="ing">CONTACT</p>
 						</label>
-						<div class="barSelectList" id="bar5"></div>
+						<div class="bar-select-list" id="bar5"></div>
 					</li>
 				</ul>
 			</nav>
@@ -124,10 +124,10 @@
 			<div class="first-box"><br>
 				<h1 class="name-title">Gabriel</h1>
 				<h1 class="last-name-title">Vieira</h1>
-				<img style="margin-top:12vh;" onclick="scrollProfile()" src="images/downBut.jp2" width=70px height=70px>
+				<img onclick="scrollProfile()" src="images/downBut.jp2" width=70px height=70px>
 			</div>
 			<div class="second-box" id="perfil">
-				<div class="profileBox" id="profileBox">
+				<div class="profile-box">
 					<p style="color:white;font-weight:bold;font-size:33px;margin-left:0px;margin-top:30px;">GABRIEL
 						VIEIRA</p>
 					<p class="pt" style="color:white;font-size:20px">Estudante de Sistema de Informação</p>
@@ -184,12 +184,12 @@
 				</div>
 			</div>
 			<div class="third-box" id="sobreMim"><br>
-				<div class="aboutMe" style="margin-left:-50px;">
-					<div class="mamTop">
+				<div class="about-me">
+					<div class="page-title">
 						<p class="pt">MAIS SOBRE MIM</p>
 						<p class="ing">MORE ABOUT ME</p>
 					</div>
-					<div class="mamBottom">
+					<div class="mam-bottom">
 						<div class="pt"><br>
 							<p>Eu nasci na cidade de São Paulo em 2003. Desde pequeno gosto de jogar videogames e usar
 								computadores, até mesmo na escola, informática e matemática sempre foram minhas aulas
@@ -202,7 +202,7 @@
 								XAML, HTML Python etc… Também aprendi coisas como robótica com arduino e modelagem de
 								objetos 3d. Um dos projetos que eu e meus amigos fizemos nestes anos teve um ótimo
 								resultado, conseguindo até aparecer em uma rádio local e na TV duas vezes. (<u
-									class="clickHere" style="cursor:pointer;" onmousedown="openPage(3);">Clique aqui</u>
+									class="clickHere" onmousedown="openPage(3);">Clique aqui</u>
 								caso queira ler mais sobre o projeto) não só na escola mas também no meu tempo livre eu
 								tinha algumas vídeo aulas sobre programação. Quando tinha 15 anos, quase 16 parei com as
 								aulas porque fui para os Estados Unidos em um programa de intercâmbio de um ano em uma
@@ -232,7 +232,7 @@
 								JavaScript, XAML, HTML, etc… I also learned things such as robotics with Arduino and how
 								to create 3d objects. One of the projects that me and my colleagues made during years
 								got a good reputation and even appeared on the TV two times and one time on a local
-								Radio.<br> (<u class="clickHere" style="cursor:pointer;"
+								Radio.<br> (<u class="clickHere"
 									onmousedown="openPage(3);">Click Here</u> if you want to read more about this
 								project) Not just at school but in my free time I had some online classes about
 								programming during those years. When I was 15 almost 16 years old I stopped going to
@@ -255,14 +255,14 @@
 				</div>
 			</div><br id="compt">
 			<div class="fourth-box">
-				<div style="font-size: 30px; margin-top: 150px;font-weight: bold;">
+				<div class="page-title">
 					<p class="pt">Competências:</p>
 					<p class="ing">Skills:</p>
 				</div>
-				<div class="skillsBox">
-					<div class="skillsCotent">
-						<div class="closeBut" id="close" onclick="closeSkill()" style="display:none;"><img
-								src="posts/close.jp2" width=40px height=40px style="margin-top:9px;margin-left:2px;">
+				<div class="skills-box">
+					<div class="skills-content">
+						<div class="close-but" onclick="closeSkill()"><img
+								src="posts/close.jp2" width=40px height=40px>
 						</div>
 						<div class="skills-but" id="1" onclick="openSkill(this.id)">
 							<div class="but-title">
@@ -345,15 +345,17 @@
 				</div>
 			</div>
 			<div class="fifth-box" id="lastPage"><br>
-				<p class="pt" style="margin:50px;margin-top:100px;font-weight:bold;font-size: 30px;">Portfólio:</p>
-				<p class="ing" style="margin:50px;margin-top:100px;font-weight:bold;font-size: 30px;">Portfolio:</p>
+				<div class="page-title">
+					<p class="pt">Portfólio:</p>
+					<p class="ing">Portfolio:</p>
+				</div>
 				<div class="posts-box">
-					<div class="skillsCotent">
-						<div class="closeBut" id="close" onclick="closePost()" style="display:none;"><img
-								src="posts/close.jp2" width=40px height=40px style="margin-top:9px;margin-left:2px;">
+					<div class="skills-content">
+						<div class="close-but" onclick="closePost()"><img
+								src="posts/close.jp2" width=40px height=40px>
 						</div>
 						<div class="posts-but" id="1p" onclick="openPost(this.id)">
-							<img src="posts/unity.jp2" width=286px height=100px style="margin-top: 10px;">
+							<img src="posts/unity.jp2" width=286px height=100px>
 							<div class="but-title">
 								<p class="pt">Unity3d</p>
 								<p class="ing">Unity3d</p>
@@ -376,7 +378,7 @@
 							<br>
 						</div>
 						<div class="posts-but" id="2p" onclick="openPost(this.id)">
-							<img src="posts/html.jp2" width=286px height=100px style="margin-top: 10px;">
+							<img src="posts/html.jp2" width=286px height=100px>
 							<div class="but-title">
 								<p class="pt">HTML/CSS/JS</p>
 								<p class="ing">HTML/CSS/JS</p>
@@ -405,7 +407,7 @@
 							<br>
 						</div>
 						<div class="posts-but" id="3p" onclick="openPost(this.id)">
-							<img src="posts/fiap.jp2" width=286px height=100px style="margin-top: 10px;">
+							<img src="posts/fiap.jp2" width=286px height=100px>
 							<div class="but-title">
 								<p class="pt">NANO COURSES</p>
 								<p class="ing">NANO COURSES</p>
@@ -413,51 +415,53 @@
 						</div>
 						<div class="skills-desc" id="p3p"><br>
 							<p class="pt">
-								Na faculdade de sistema de informação da FIAP, os alunos tem acesso a diversos cursos do qual liberam provas ao terminar todas as aulas, nesta prova se o aluno tirar mais de 70% ele recebe um certificado de conclusão do curso, então decidi deixar anexado todos os meu certificados neste post.
+								Na faculdade de sistema de informação da FIAP, os alunos tem acesso a diversos cursos do
+								qual liberam provas ao terminar todas as aulas, nesta prova se o aluno tirar mais de 70%
+								ele recebe um certificado de conclusão do curso, então decidi deixar anexado todos os
+								meu certificados neste post.
 							</p>
 							<p class="ing">
-								Every Information System Student at FIAP has access to multiple courses which at the end has a final test, if the student scores more than 70% he receives a certification of conclusion of the course, so I will attach all my certificates on this post.
+								Every Information System Student at FIAP has access to multiple courses which at the end
+								has a final test, if the student scores more than 70% he receives a certification of
+								conclusion of the course, so I will attach all my certificates on this post.
 							</p>
 							<br>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div onclick="scrollContact()"
-				style="width: 100%;cursor:pointer;margin-bottom:10px;background-color: rgba(32, 41, 66, 0.534);z-index:1000000;position:absolute;">
+			<div onclick="scrollContact()" class="contact-bar">
 				<br>
-				<p class="pt" style="padding: 5px;">ENTRAR EM CONTATO</p>
-				<p class="ing" style="padding: 5px;">CONTACT ME</p><br>
+				<p class="pt" >ENTRAR EM CONTATO</p>
+				<p class="ing" >CONTACT ME</p><br>
 			</div>
 		</div>
 		<div class="contact-page">
 			<div class="sixth-box">
 				<div class="contact-box">
-					<nav class="contactOptions" id="contactOptions">
+					<nav class="contact-options" id="contact-options">
 						<ul>
-							<li><a style="text-decoration:none" href="https://github.com/gabrielov2003"
-									target="_blank"><label class="contactBut">GITHUB<img class="butIcon"
-											src="images/githubBut.jp2" width=75px height=45px></label></a></li>
-							<li><a style="text-decoration:none"
-									href="https://www.linkedin.com/in/gabriel-ovidio-vieira-a383b21a6/"
-									target="_blank"><label class="contactBut">LINKEDIN<img class="butIcon"
+							<li><a href="https://github.com/gabrielov2003" target="_blank"><label
+										class="contact-but">GITHUB<img class="but-icon" src="images/githubBut.jp2"
+											width=75px height=45px></label></a></li>
+							<li><a href="https://www.linkedin.com/in/gabriel-ovidio-vieira-a383b21a6/"
+									target="_blank"><label class="contact-but">LINKEDIN<img class="but-icon"
 											src="images/linkedinBut.jp2" width=75px height=45px></label></a></li>
-							<li><a style="text-decoration:none" href="https://www.freelancer.com/u/gabrielov2003"
-									target="_blank"><label class="contactBut">FREELANCER<img class="butIcon"
-											src="images/freelancerBut.jp2" width=75px height=45px></label></a></li>
-							<li><label class="contactBut" onclick="openEmailBox()">
+							<li><a href="https://www.freelancer.com/u/gabrielov2003" target="_blank"><label
+										class="contact-but">FREELANCER<img class="but-icon" src="images/freelancerBut.jp2"
+											width=75px height=45px></label></a></li>
+							<li><label class="contact-but" onclick="openEmailBox()">
 									<p class="pt">ENVIAR EMAIL</p>
-									<p class="ing">MESSAGE ME</p><img class="butIcon" src="images/emailBut.jp2"
+									<p class="ing">MESSAGE ME</p><img class="but-icon" src="images/emailBut.jp2"
 										width=75px height=45px>
 								</label></li>
-							<input type="text" value="gabrielov2003@gmail.com" id="myInput"
-								style="display:none;"></input>
+							<input type="text" value="gabrielov2003@gmail.com" id="my-input"></input>
 						</ul>
 					</nav>
-					<div class="emailDiv">
-						<form action="https://formspree.io/f/xdopqkek" method="POST" class="emailBox" id="my-form"><br>
-							<div class="closeBut2" id="closeMessage" onclick="closeMessage()" style="display:none;"><img
-									src="posts/close.jp2" width=50px height=50px style="margin-top:3px"></div>
+					<div class="email-div">
+						<form action="https://formspree.io/f/xdopqkek" method="POST" class="email-box" id="my-form"><br>
+							<div class="close-but" id="close-message" onclick="closeEmailBox()"><img
+									src="posts/close.jp2" width=40px height=40px></div>
 							<div class="form-group">
 								<p class="pt">Nome:</p>
 								<p class="ing">Name:</p>
@@ -477,11 +481,11 @@
 								<p class="pt">ENVIAR</p>
 								<p class="ing">SUBMIT</p>
 							</button><br>
-							<div id="status" style="display:none;">
+							<div id="status">
 								<p class="pt">Sucesso</p>
 								<p class="ing">Success</p>
 							</div>
-							<div id="statusError" style="display:none;">Oops! Ocorreu um erro.<p class="pt"></p>
+							<div id="status-error">Oops! Ocorreu um erro.<p class="pt"></p>
 								<p class="ing">Oops! There was a problem.</p>
 							</div>
 							<br>

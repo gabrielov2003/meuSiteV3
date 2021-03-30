@@ -4,26 +4,20 @@ var postOpened = 0; //Post aberto
 var skillOpened = 0; //Skill aberta
 var mainPage;
 var contactPage;
+var p = document.getElementsByClassName("pt"); //Textos em pt
+var e = document.getElementsByClassName("ing"); //Textos em ing
 
-//Page zoom:
-document.body.style.zoom = 1.1;
 
 // Language Switch:
 
-var p;
-p = document.getElementsByClassName("pt");
-var e;
-e = document.getElementsByClassName("ing");
-var i;
-
 function switchPt() {
-	document.getElementById("bPt").setAttribute("style", "background-color: rgb(31, 71, 87)");
-	document.getElementById("bIng").setAttribute("style", "background-color: rgb(97,165, 216)");
-
 	for (i = 0; i < p.length; i++) {
 		p[i].style.display = "block";
 		e[i].style.display = "none";
 	}
+	document.getElementById("pt-but").style.backgroundColor = "rgb(31, 71, 87)";
+	document.getElementById("ing-but").style.backgroundColor = "rgb(97,165, 216)";
+	document.documentElement.lang = "pt-br";
 }
 
 function switchEng() {
@@ -31,8 +25,9 @@ function switchEng() {
 		e[i].style.display = "block";
 		p[i].style.display = "none";
 	}
-	document.getElementById("bIng").setAttribute("style", "background-color: rgb(31, 71, 87)");
-	document.getElementById("bPt").setAttribute("style", "background-color: rgb(97,165, 216)");
+	document.getElementById("ing-but").style.backgroundColor = "rgb(31, 71, 87)";
+	document.getElementById("pt-but").style.backgroundColor = "rgb(97,165, 216)";
+	document.documentElement.lang = "en";
 }
 
 lng = navigator.language;
@@ -40,7 +35,7 @@ console.log("page language:", lng);
 if (lng == "pt-BR") {
 	setTimeout(() => {
 		switchPt();
-	}, 200);
+	}, 1);
 }
 
 //Scroll Profile //Mudar conforme lingua
@@ -80,6 +75,7 @@ function closeContact() {
 	contactPage = document.getElementsByClassName("contact-page");
 	contactPage[0].style.display = "none";
 	navClose()
+	closeStatus()
 }
 
 function scrollUp() {
@@ -100,19 +96,20 @@ function myFunction() {
 }
 
 function openEmailBox() {
-	var contactButtons = document.getElementsByClassName("contactOptions");
-	var emailBox = document.getElementsByClassName("emailBox")
-	contactButtons[0].setAttribute("style", "display:none;");
-	emailBox[0].setAttribute("style", "display:block;");
-	document.getElementById("closeMessage").setAttribute("style", "display: block;");
+	var contactButtons = document.getElementsByClassName("contact-options");
+	var emailBox = document.getElementsByClassName("email-box")
+	contactButtons[0].style.display = "none";
+	emailBox[0].style.display = "block";
+	document.getElementById("close-message").style.display = "block";
 }
 
-function closeMessage() {
-	var contactButtons = document.getElementsByClassName("contactOptions");
-	var emailBox = document.getElementsByClassName("emailBox")
-	contactButtons[0].setAttribute("style", "display:flex;");
-	emailBox[0].setAttribute("style", "display:none;");
-	document.getElementById("closeMessage").setAttribute("style", "display: none;");
+function closeEmailBox() {
+	var contactButtons = document.getElementsByClassName("contact-options");
+	var emailBox = document.getElementsByClassName("email-box")
+	contactButtons[0].style.display = "flex";
+	emailBox[0].style.display = "none";
+	document.getElementById("close-message").style.display = "none";
+	closeStatus();
 }
 
 //Open buttons list:
@@ -121,21 +118,21 @@ var listOpened = false;
 function navToggle() {
 	if (listOpened == false) {
 		listOpened = true;
-		document.getElementById("buttons-list").setAttribute("style", "display: block;");
+		document.getElementById("buttons-list").style.display = "block";
 	} else {
 		listOpened = false;
-		document.getElementById("buttons-list").setAttribute("style", "display: none;");
+		document.getElementById("buttons-list").style.display = "none";
 	}
 }
 
 function navClose() {
 	listOpened = false;
-	document.getElementById("buttons-list").setAttribute("style", "display: none;");
+	document.getElementById("buttons-list").style.display = "none";
 }
 
 function navOpen() {
 	listOpened = true;
-	document.getElementById("buttons-list").setAttribute("style", "display: block;");
+	document.getElementById("buttons-list").style.display = "block";
 }
 
 //Open and close Posts/Skills:
@@ -143,23 +140,24 @@ var buttonClicked = document.getElementsByClassName("skills-but");
 
 function openSkill(skillNum) {
 	for (i = 0; i < buttonClicked.length; i++) {
-		buttonClicked[i].setAttribute("style", "display: none;");
+		buttonClicked[i].style.display = "none";
 	}
-	document.getElementById("s" + skillNum).setAttribute("style", "display: block;");
-	close = document.getElementsByClassName("closeBut");
-	close[0].setAttribute("style", "display: block;");
+	document.getElementById("s" + skillNum).style.display = "block";
+	close = document.getElementsByClassName("close-but");
+	close[0].style.display = "block";
 	scrollSkills()
 	skillOpened = skillNum;
 }
 
 function closeSkill() {
 	for (i = 0; i < buttonClicked.length; i++) {
-		buttonClicked[i].setAttribute("style", "display: block;margin-left:0px;");
+		buttonClicked[i].style.display = "block";
+		buttonClicked[i].style.marginLeft = "0px";
 	}
-	close = document.getElementsByClassName("closeBut");
-	close[0].setAttribute("style", "display: none;");
+	close = document.getElementsByClassName("close-but");
+	close[0].style.display = "none";
 	if (skillOpened != 0) {
-		document.getElementById("s" + skillOpened).setAttribute("style", "display: none;");
+		document.getElementById("s" + skillOpened).style.display = "none";
 	}
 	skillOpened = 0;
 	closePic();
@@ -169,23 +167,24 @@ var postButtonClicked = document.getElementsByClassName("posts-but");
 
 function openPost(postNum) {
 	for (i = 0; i < postButtonClicked.length; i++) {
-		postButtonClicked[i].setAttribute("style", "display: none;");
+		postButtonClicked[i].style.display = "none";
 	}
-	document.getElementById("p" + postNum).setAttribute("style", "display: block;");
-	close = document.getElementsByClassName("closeBut");
-	close[1].setAttribute("style", "display: block;");
+	document.getElementById("p" + postNum).style.display = "block";
+	close = document.getElementsByClassName("close-but");
+	close[1].style.display = "block";
 	scrollPortf()
 	postOpened = postNum;
 }
 
 function closePost() {
 	for (i = 0; i < postButtonClicked.length; i++) {
-		postButtonClicked[i].setAttribute("style", "display: block;margin-left:0px;");
+		postButtonClicked[i].style.marginLeft = "0px";
+		postButtonClicked[i].style.display = "block";
 	}
-	close = document.getElementsByClassName("closeBut");
-	close[1].setAttribute("style", "display: none;");
+	close = document.getElementsByClassName("close-but");
+	close[1].style.display = "none";
 	if (postOpened != 0) {
-		document.getElementById("p" + postOpened).setAttribute("style", "display: none;");
+		document.getElementById("p" + postOpened).style.display = "none";
 	}
 	postOpened = 0;
 	closePic();
@@ -228,21 +227,20 @@ window.addEventListener("DOMContentLoaded", function () {
 	var form = document.getElementById("my-form");
 	var button = document.getElementById("my-form-button");
 	var statusSuccess = document.getElementById("status");
-	var statusError = document.getElementById("statusError");
+	var statusError = document.getElementById("status-error");
 
 	// Success and Error functions for after the form is submitted
 
 	function success() {
 		form.reset();
-		statusSuccess.setAttribute("style", "display: block;");
-		statusError.setAttribute("style", "display: none;");
+		statusSuccess.style.display = "block";
+		statusError.style.display = "none";
 	}
 
 	function error() {
-		statusError.setAttribute("style", "display: block;");
-		statusSuccess.setAttribute("style", "display: none;");
+		statusError.style.display = "block";
+		statusSuccess.style.display = "none";
 	}
-
 	// handle the form submission event
 
 	form.addEventListener("submit", function (ev) {
@@ -269,3 +267,8 @@ function ajax(method, url, data, success, error) {
 	xhr.send(data);
 }
 //Contact Form End
+
+function closeStatus(){
+	document.getElementById("status-error").style.display = "none";
+	document.getElementById("status").style.display = "none";
+}

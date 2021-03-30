@@ -12,18 +12,21 @@ body {
   background-position: center;
   background-size: cover;
   align-items: center;
+  zoom: 1.1;
 }
 
-*
-
 /*divs (eu acho)*/
-  {
+* {
   margin: 0;
   padding: 0;
   width: auto;
 }
 
-.lgb {
+u{
+  cursor: pointer;
+}
+
+.lg-but {
   margin: 5px;
   position: fixed;
   text-align: right;
@@ -32,7 +35,7 @@ body {
   z-index: 999;
 }
 
-.bIng {
+.ing-but {
   position: absolute;
   border-radius: 0px;
   background-color: rgb(31, 71, 87);
@@ -45,7 +48,8 @@ body {
   cursor: pointer;
 }
 
-.bPt {
+
+.pt-but {
   margin-left: 76px;
   position: absolute;
   border-radius: 0px;
@@ -66,20 +70,20 @@ body {
   display: block;
 }
 
-.tabBut {
-  width: auto;
-  height: auto;
-  padding: 10px;
-  background-color: rgba(97, 164, 216, 0);
-  display: block;
-  color: #fff;
+.go-up {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  background-color: rgba(32, 41, 66, 1);
+  bottom: -120px;
+  margin-left: 5px;
+  transition: bottom linear .2s;
   cursor: pointer;
-  text-align: center;
-  font-weight: bold;
-  transition: background-color 0.2s ease;
 }
 
-.nav_tabs {
+
+
+.nav-tabs {
   width: 100%;
   height: auto;
   background-color: rgba(32, 41, 66, 0.904);
@@ -90,14 +94,14 @@ body {
   z-index: 100;
 }
 
-.nav_tabs ul {
+.nav-tabs ul {
   list-style: none;
   margin-left: 5px;
   margin-right: 5px;
   margin-top: 11px;
 }
 
-.nav_tabs ul li {
+.nav-tabs ul li {
   float: left;
   /*position:relative;*/
   margin: 15px;
@@ -112,19 +116,220 @@ body {
   justify-content: baseline;
 }
 
-#nav-tabMobile {
+#nav-tab-mobile {
   display: none;
 }
 
-.go-up {
-  width: 70px;
-  height: 70px;
-  position: fixed;
-  background-color: rgba(32, 41, 66, 1);
-  bottom: -120px;
-  margin-left: 5px;
-  transition: bottom linear .2s;
+.rd-tabs {
+  display: none;
+}
+
+.tab-but {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: rgba(97, 164, 216, 0);
+  display: block;
+  color: #fff;
   cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.bar-select {
+  transition: 0.2s linear;
+  height: 0px;
+  width: 0px;
+  margin-left: 25px;
+  position: absolute;
+}
+
+.bar-select-list {
+  transition: 0.2s linear;
+  height: 0px;
+  width: 0px;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -6px;
+  position: absolute;
+}
+
+#but1:hover #bar1 {
+  width: 100px;
+  height: 5px;
+  background-color: #c1c8db;
+}
+
+#but2:hover #bar2 {
+  width: 100px;
+  height: 5px;
+  background-color: #c1c8db;
+}
+
+#but3:hover #bar3 {
+  width: 100px;
+  height: 5px;
+  background-color: #c1c8db;
+}
+
+#but4:hover #bar4 {
+  width: 100px;
+  height: 5px;
+  background-color: #c1c8db;
+}
+
+#but5:hover #bar5 {
+  width: 100px;
+  height: 5px;
+  background-color: #c1c8db;
+}
+
+#but5{
+  margin-bottom: 10px;
+}
+
+#buttons-list {
+  width: 100%;
+  height: auto;
+  background-color: rgba(32, 41, 66, 0.904);
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 80px;
+  z-index: 100;
+  display:none;
+}
+
+#buttons-list ul {
+  list-style: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 11px;
+}
+
+#buttons-list ul li {
+  margin-top: 10px;
+}
+
+.main-content {
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-box {
+  width: 100%;
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-image:url(../images/fundo.jp2);
+  background-size: 100% 100%;
+  height: 92vh;
+  color: aliceblue;
+  text-align: center;
+}
+
+.page-title{
+  margin:50px;
+  margin-top:100px;
+  font-weight:bold;
+  font-size: 30px;
+  color: rgb(48, 48, 48);
+}
+
+.first-box img{
+  margin-top:12vh;
+}
+
+.name-title {
+  margin-top: 30vh;
+  font-size: 70px;
+  margin-left: -40px;
+  font-style: italic;
+}
+
+.last-name-title {
+  font-size: 70px;
+  margin-left: 40px;
+  font-style: italic;
+}
+
+.second-box {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-box {
+  background-color: rgb(90, 86, 110);
+  border-radius: 10px 10px 10px;
+  border-color: rgb(97, 165, 216);
+  border-width: 4px;
+  border-style: solid;
+  margin-bottom: 30vh;
+  text-align: center;
+  width: 650px;
+  margin-left: -10px;
+  font-size: 19px;
+  color: white;
+  margin-top: 180px;
+}
+
+.bio {
+  width: 400px;
+  margin-left: 120px;
+  margin-top: 8px;
+}
+
+.info {
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+  margin-top: 15px;
+  margin-left: 11px;
+  margin-bottom: 20px;
+}
+
+.third-box {
+  width: 100%;
+  background-color: #c1c8db;
+  height: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.mam-bottom {
+  margin-top: 18px;
+  background-color: rgba(97, 164, 216, 0);
+  color: rgb(48, 48, 48);
+  border-radius: 8px 8px 8px;
+  text-align: left;
+  height: auto;
+  width: 570px;
+  font-weight: bold;
+  margin-bottom: 140px;
+}
+
+.mam-bottom p {
+  vertical-align: middle;
+  padding: 10px;
+  margin-left: 18px;
+  width: 530px;
+}
+
+.fourth-box {
+  width: 100%;
+  color: aliceblue;
+  height: auto;
+  text-align: center;
+  color: rgb(36, 36, 36);
+  vertical-align: middle;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .skills-but {
@@ -175,297 +380,27 @@ body {
   margin: 10px
 }
 
-.emailBox {
-  width: 305px;
-  background-color: rgba(32, 41, 66, 1);
-  display: none;
-  margin-top: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 20px #333;
-  margin-bottom: 20px;
-  align-items: center;
+.skills-box {
+  width: 100%;
   text-align: center;
-}
-
-.emailDiv {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-@media screen and (max-width: 1229px) {
-  #nav-tabs {
-    display: none;
-  }
-
-  #nav-tabMobile {
-    display: flex;
-  }
-
-  .go-up {
-    width: 100px;
-    height: 100px;
-  }
-
-  .go-up img {
-    width: 100px;
-    height: 100px;
-  }
-
-  #contactOptions ul {
-    width: 320px;
-    margin-left: 40px;
-  }
-
-  #bio {
-    font-size: 27px;
-    width: 600px;
-    margin-left: 20px;
-  }
-
-  .skills-desc {
-    width: 100%;
-    margin-left: 0px;
-  }
-
-  .skills-desc p {
-    font-size: 22px;
-  }
-
-  #buttons-list ul li {
-    font-size: 22px;
-  }
-
-  .skills-but {
-    width: 99%;
-  }
-
-  .but-title {
-    font-size: 25px;
-  }
-
-  .skillsCotent {
-    width: 99%;
-  }
-
-  .emailBox {
-    margin-left: 50px;
-  }
-
-  .bPt {
-    width: 90px;
-    height: 70px;
-    margin-left: 96px;
-  }
-
-  .bIng {
-    width: 90px;
-    height: 70px;
-  }
-
-  .lgb button img {
-    width: 80px;
-    height: 60px;
-  }
-}
-
-#buttons-list {
-  width: 100%;
-  height: auto;
-  background-color: rgba(32, 41, 66, 0.904);
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-top: 80px;
-  z-index: 100;
-}
-
-#buttons-list ul {
-  list-style: none;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 11px;
-}
-
-#buttons-list ul li {
-  margin-top: 10px;
-}
-
-.barSelect {
-  transition: 0.2s linear;
-  height: 0px;
-  width: 0px;
-  margin-left: 25px;
-  position: absolute;
-}
-
-.barSelectList {
-  transition: 0.2s linear;
-  height: 0px;
-  width: 0px;
-  left: 50%;
-  margin-left: -50px;
-  margin-top: -6px;
-  position: absolute;
-}
-
-#but1:hover #bar1 {
-  width: 100px;
-  height: 5px;
-  background-color: #c1c8db;
-}
-
-#but2:hover #bar2 {
-  width: 100px;
-  height: 5px;
-  background-color: #c1c8db;
-}
-
-#but3:hover #bar3 {
-  width: 100px;
-  height: 5px;
-  background-color: #c1c8db;
-}
-
-#but4:hover #bar4 {
-  width: 100px;
-  height: 5px;
-  background-color: #c1c8db;
-}
-
-#but5:hover #bar5 {
-  width: 100px;
-  height: 5px;
-  background-color: #c1c8db;
-}
-
-.main-content {
-  width: 100%;
-  height: auto;
-  align-items: center;
-  justify-content: center;
-}
-
-.first-box {
-  width: 100%;
-  background-color: #333;
-  background-image: url(images/fundo.jp2);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 92vh;
-  color: aliceblue;
-  text-align: center;
-}
-
-.name-title {
-  margin-top: 30vh;
-  font-size: 70px;
-  margin-left: -40px;
-  font-style: italic;
-}
-
-.last-name-title {
-  font-size: 70px;
-  margin-left: 40px;
-  font-style: italic;
-}
-
-.second-box {
-  margin-top: 30px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.rd_tabs {
-  display: none;
-}
-
-.profileBox {
-  background-color: rgb(90, 86, 110);
-  border-radius: 10px 10px 10px;
-  border-color: rgb(97, 165, 216);
-  border-width: 4px;
-  border-style: solid;
-  margin-bottom: 30vh;
-  text-align: center;
-  width: 650px;
-  margin-left: -10px;
-  font-size: 19px;
-  color: white;
-  margin-top: 180px;
-}
-
-.bio {
-  width: 400px;
-  margin-left: 120px;
-  margin-top: 8px;
-}
-
-.info {
-  color: white;
-  font-weight: bold;
-  font-size: 19px;
-  margin-top: 15px;
-  margin-left: 11px;
-  margin-bottom: 20px;
-}
-
-.mamTop {
-  margin-top: 95px;
-  background-color: rgba(97, 164, 216, 0);
-  color: rgb(0, 0, 0);
-  border-radius: 8px 8px 8px;
-  text-align: center;
-  height: 75px;
-  width: 355px;
-  font-weight: bold;
-  margin-left: 21%;
-}
-
-.mamTop p {
-  line-height: 75px;
-  font-size: 30px;
-}
-
-.mamBottom {
-  margin-top: 18px;
-  background-color: rgba(97, 164, 216, 0);
-  color: rgb(48, 48, 48);
-  border-radius: 8px 8px 8px;
-  text-align: left;
-  height: auto;
-  width: 570px;
-  font-weight: bold;
-  margin-bottom: 140px;
-}
-
-.mamBottom p {
-  vertical-align: middle;
-  padding: 10px;
-  margin-left: 18px;
-  width: 530px;
-}
-
-.third-box {
-  width: 100%;
-  background-color: #c1c8db;
-  height: auto;
-  justify-content: center;
-  display: flex;
-}
-
-.fourth-box {
-  width: 100%;
-  color: aliceblue;
-  height: auto;
-  text-align: center;
-  color: rgb(36, 36, 36);
+  margin-top: 50px;
   vertical-align: middle;
   align-items: center;
-  font-size: 30px;
-  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+  height: auto;
+}
+
+.skills-content {
+  background-color: rgba(255, 0, 0, 0);
+  display: block;
+  height: auto;
+  width: 626px;
+  text-align: center;
+  align-items: center;
+  font-size: 17px;
+  margin-bottom: 100px;
 }
 
 .fifth-box {
@@ -480,44 +415,6 @@ body {
   align-items: center;
 }
 
-.sixth-box {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
-}
-
-.contact-box {
-  width: 900px;
-  margin-left: -50px;
-  margin-top: 90px;
-  margin-bottom: 10px;
-}
-
-.skillsBox {
-  width: 100%;
-  text-align: center;
-  margin-top: 50px;
-  vertical-align: middle;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 150px;
-  height: auto;
-}
-
-.skillsCotent {
-  background-color: rgba(255, 0, 0, 0);
-  display: block;
-  height: auto;
-  width: 626px;
-  text-align: center;
-  align-items: center;
-  font-size: 17px;
-  margin-bottom: 100px;
-}
-
 .posts-box {
   width: 100%;
   height: auto;
@@ -528,16 +425,22 @@ body {
   align-items: center;
 }
 
-.closeBut {
+.close-but {
   border-radius: 12px;
   cursor: pointer;
   margin-left: 280px;
   width: 59px;
   height: 59px;
   background-color: rgba(32, 41, 66, 1);
+  display: none;
 }
 
-.butIcon {
+.close-but img{
+  margin-top:9px;
+  margin-left:2px;
+}
+
+.but-icon {
   margin-left: 57px;
   margin-top: 32px;
 }
@@ -555,10 +458,89 @@ body {
   margin-top: 10px;
 }
 
+.posts-but img{
+  margin-top: 10px;
+}
+
+.sixth-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.contact-page {
+  display: none;
+}
+
+.email-box {
+  width: 305px;
+  background-color: rgba(32, 41, 66, 1);
+  display: none;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px #333;
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.email-div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 
 
+#close-message{
+  position: absolute;
+  cursor: pointer;
+  margin-left: -70px;
+  width: 59px;
+  height: 59px;
+  border-radius: 7px;
+  box-shadow: 0px 0px 20px #333;
+  background-color: rgba(32, 41, 66, 1);
+}
 
-.contactOptions {
+.contact-bar{
+  width: 100%;
+  cursor:pointer;
+  margin-bottom:10px;
+  background-color: rgba(32, 41, 66, 0.534);
+  z-index:1000000;
+  position:absolute;
+}
+
+.contact-bar p{
+  padding:5px;
+}
+
+.contact-box {
+  width: 900px;
+  margin-left: -50px;
+  margin-top: 90px;
+  margin-bottom: 10px;
+}
+
+.about-me{
+  margin-left: -50px;
+}
+
+#status-error{
+  display:none;
+}
+
+#status{
+  display: none;
+}
+
+#my-input{
+  display: none;
+}
+
+.contact-options {
   margin-top: 10px;
   position: relative;
   align-items: center;
@@ -567,13 +549,13 @@ body {
   justify-content: center;
 }
 
-.contactOptions ul {
+.contact-options ul {
   list-style: none;
   display: block;
   height: 10px;
 }
 
-.contactOptions ul li {
+.contact-options ul li {
   align-items: center;
   text-align: left;
   float: left;
@@ -581,12 +563,15 @@ body {
   font-size: 18px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
 }
+.contact-options ul li a {
+  text-decoration:none;
+}
 
-#downBut {
+#down-but {
   transition: linear 3s;
 }
 
-.contactBut {
+.contact-but {
   margin: 0px;
   width: 140px;
   height: 110px;
@@ -601,50 +586,14 @@ body {
   margin-left: 10px;
 }
 
-.contact-page {
-  display: none;
-}
-
-/*Popup:*/
-#box {
-  overflow: hidden;
-  background: #b9deaf;
-  box-shadow: 0 0 20px black;
-  border-radius: 0px;
-  position: absolute;
-  left: 49.5%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-  padding: 10px;
-  text-align: center;
-  display: block;
-  margin-top: -80px;
-  width: 250px;
-  height: 0px;
-  transition-property: height;
-  transition-duration: 0.3s;
-  transition-timing-function: linear;
-}
-
-#box.horizTranslate {
-  height: 35px;
-}
-
-#box h1 {
-  color: #333;
-}
-
-/*Popup end*/
-
-
-
 .form-group {
   width: 90%;
   margin-bottom: 20px;
   font-size: 18px;
-  margin-left: 9px;
+  margin-left: 14px;
   color: #fff;
   font-weight: bold;
+
 }
 
 .form-group input,
@@ -681,17 +630,6 @@ textarea {
   background-color: rgb(31, 71, 87);
 }
 
-.closeBut2 {
-  position: absolute;
-  cursor: pointer;
-  margin-left: -70px;
-  width: 59px;
-  height: 59px;
-  border-radius: 7px;
-  box-shadow: 0px 0px 20px #333;
-  background-color: rgba(32, 41, 66, 1);
-}
-
 #status {
   width: 60%;
   text-align: center;
@@ -704,7 +642,7 @@ textarea {
   margin-bottom: -4;
 }
 
-#statusError {
+#status-error {
   width: 60%;
   text-align: center;
   padding: 10px;
@@ -712,4 +650,80 @@ textarea {
   color: white;
   background-color: rgb(250, 129, 92);
   margin-left: 50px;
+}
+
+@media screen and (max-width: 1229px) {
+  #nav-tabs {
+    display: none;
+  }
+
+  #nav-tab-mobile {
+    display: flex;
+  }
+
+  .go-up {
+    width: 100px;
+    height: 100px;
+  }
+
+  .go-up img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #contact-options ul {
+    width: 320px;
+    margin-left: 40px;
+  }
+
+  #bio {
+    font-size: 27px;
+    width: 600px;
+    margin-left: 20px;
+  }
+
+  .skills-desc {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .skills-desc p {
+    font-size: 22px;
+  }
+
+  #buttons-list ul li {
+    font-size: 22px;
+  }
+
+  .skills-but {
+    width: 99%;
+  }
+
+  .but-title {
+    font-size: 25px;
+  }
+
+  .skills-content {
+    width: 99%;
+  }
+
+  .email-box {
+    margin-left: 50px;
+  }
+
+  .pt-but {
+    width: 90px;
+    height: 70px;
+    margin-left: 96px;
+  }
+
+  .ing-but {
+    width: 90px;
+    height: 70px;
+  }
+
+  .lg-but button img {
+    width: 80px;
+    height: 60px;
+  }
 }
