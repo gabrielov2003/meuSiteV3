@@ -7,6 +7,7 @@ var contactPage;
 var p = document.getElementsByClassName("pt"); //Textos em pt
 var e = document.getElementsByClassName("ing"); //Textos em ing
 
+document.body.style.zoom = "1.1" 
 
 // Language Switch:
 
