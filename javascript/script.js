@@ -287,7 +287,7 @@ window.watsonAssistantChatOptions = {
 			'BASE-z-index': '8000',
 			'BASE-bottom-position': '3rem',
 			'LAUNCHER-position-bottom':'50px',
-			'BASE-width':'var(--WatsonAssistantChat-viewport-width,"80vw")'
+			'BASE-heigh':'var(--WatsonAssistantChat-viewport-height,"80%")'
 		})
 		instance.render(); }
   };
