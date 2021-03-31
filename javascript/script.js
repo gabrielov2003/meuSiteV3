@@ -282,39 +282,18 @@ window.watsonAssistantChatOptions = {
 	integrationID: "99990010-92a7-4b6d-9000-f17ecdc06321", // The ID of this integration.
 	region: "us-south", // The region your integration is hosted in.
 	serviceInstanceID: "cb8a10a1-d6fd-4bc3-bb46-1f7ecd46b6be", // The ID of your service instance.
-	onLoad: function(instance) { instance.render(); }
+	onLoad: function(instance) { 
+		instance.updateCSSVariables({
+			'BASE-z-index': '8000',
+			'BASE-bottom-position': '3rem',
+			'LAUNCHER-position-bottom':'50px',
+			'BASE-width':'var(--WatsonAssistantChat-viewport-width,"80vw")'
+		})
+		instance.render(); }
   };
 setTimeout(function(){
   const t=document.createElement('script');
   t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
-  document.head.appendChild(t); updateWatson();
+  document.head.appendChild(t);
 });
-
-function updateWatson(){
-	setTimeout(() => {
-		var watson = document.getElementsByClassName("WACLauncher__ButtonContainer");
-		var chat = document.getElementsByClassName("WACWidget WACLocale-en WACWidget--defaultElement WACWidget--launched");
-		watson[0].setAttribute("style","margin-bottom:20px !important;" );
-		chat[0].setAttribute("style", " margin-bottom:20px !important")
-	}, 200);
-	setTimeout(() => {
-		var watson = document.getElementsByClassName("WACLauncher__ButtonContainer");
-		var chat = document.getElementsByClassName("WACWidget WACLocale-en WACWidget--defaultElement WACWidget--launched");
-		watson[0].setAttribute("style","margin-bottom:20px !important;" );
-		chat[0].setAttribute("style", " margin-bottom:20px !important")
-	}, 500);
-	setTimeout(() => {
-		var watson = document.getElementsByClassName("WACLauncher__ButtonContainer");
-		var chat = document.getElementsByClassName("WACWidget WACLocale-en WACWidget--defaultElement WACWidget--launched");
-		watson[0].setAttribute("style","margin-bottom:20px !important;" );
-		chat[0].setAttribute("style", " margin-bottom:20px !important")
-	}, 1000);
-	setTimeout(() => {
-		var watson = document.getElementsByClassName("WACLauncher__ButtonContainer");
-		var chat = document.getElementsByClassName("WACWidget WACLocale-en WACWidget--defaultElement WACWidget--launched");
-		watson[0].setAttribute("style","margin-bottom:20px !important;" );
-		chat[0].setAttribute("style", " margin-bottom:20px !important")
-	}, 2000);
-	
-}
 
