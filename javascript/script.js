@@ -7,8 +7,6 @@ var contactPage;
 var p = document.getElementsByClassName("pt"); //Textos em pt
 var e = document.getElementsByClassName("ing"); //Textos em ing
 
-//document.body.style.zoom = "1.1";
-
 // Language Switch:
 
 function switchPt() {
@@ -284,7 +282,7 @@ window.watsonAssistantChatOptions = {
 	serviceInstanceID: "cb8a10a1-d6fd-4bc3-bb46-1f7ecd46b6be", // The ID of your service instance.
 	onLoad: function(instance) { 
 		instance.updateCSSVariables({
-			'BASE-z-index': '8000',
+			'BASE-z-index': '1000002',
 			'BASE-bottom-position': '3rem',
 			'LAUNCHER-position-bottom':'50px',
 			'BASE-heigh':'var(--WatsonAssistantChat-viewport-height,"80%")'
