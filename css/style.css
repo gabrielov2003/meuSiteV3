@@ -12,6 +12,12 @@ body {
   background-position: center;
   background-size: cover;
   align-items: center;
+  height: 100%;
+  padding-top: 0;
+  line-height: 1.4285;
+}
+html{
+  -webkit-text-size-adjust: 100%;
 }
 
 /*divs (eu acho)*/
@@ -19,6 +25,7 @@ body {
   margin: 0;
   padding: 0;
   width: auto;
+  box-sizing: border-box;
 }
 
 u {
