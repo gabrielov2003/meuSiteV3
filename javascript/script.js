@@ -77,6 +77,7 @@ function closeContact() {
 	contactPage[0].style.display = "none";
 	navClose()
 	closeStatus()
+	closeEmailBox()
 }
 
 function scrollUp() {
@@ -107,7 +108,7 @@ function openEmailBox() {
 function closeEmailBox() {
 	var contactButtons = document.getElementsByClassName("contact-options");
 	var emailBox = document.getElementsByClassName("email-box")
-	contactButtons[0].style.display = "flex";
+	contactButtons[0].style.display = "block";
 	emailBox[0].style.display = "none";
 	document.getElementById("close-message").style.display = "none";
 	closeStatus();
@@ -283,9 +284,8 @@ window.watsonAssistantChatOptions = {
 	onLoad: function(instance) { 
 		instance.updateCSSVariables({
 			'BASE-z-index': '1000002',
-			'BASE-bottom-position': '3rem',
-			'LAUNCHER-position-bottom':'50px',
-			'BASE-heigh':'var(--WatsonAssistantChat-viewport-height,"80%")'
+			'BASE-bottom-position': '6rem',
+			'LAUNCHER-position-bottom':'47px'
 		})
 		instance.render(); }
   };

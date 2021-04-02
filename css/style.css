@@ -16,7 +16,8 @@ body {
   padding-top: 0;
   line-height: 1.4285;
 }
-html{
+
+html {
   -webkit-text-size-adjust: 100%;
 }
 
@@ -41,12 +42,17 @@ u {
   z-index: 999;
 }
 
+.lg-but button img {
+  width: 70px;
+  height: 50px;
+}
+
 .ing-but {
   position: absolute;
   border-radius: 0px;
   background-color: rgb(31, 71, 87);
-  width: 70px;
-  height: 50px;
+  width: 80px;
+  height: 60px;
   border: none;
   color: white;
   font-weight: bold;
@@ -56,16 +62,26 @@ u {
 
 
 .pt-but {
-  margin-left: 76px;
+  margin-left: 86px;
   position: absolute;
   border-radius: 0px;
   background-color: rgb(97, 165, 216);
-  width: 70px;
-  height: 50px;
+  width: 80px;
+  height: 60px;
   border: none;
   color: white;
   font-weight: bold;
   cursor: pointer;
+}
+
+.ads {
+  position: fixed;
+  width: 180;
+  height: 45;
+  display: block;
+
+  right: 4px;
+  bottom: 2px;
 }
 
 .pt {
@@ -77,14 +93,20 @@ u {
 }
 
 .go-up {
-  width: 70px;
-  height: 70px;
+  width: 56px;
+  height: 56px;
   position: fixed;
-  background-color: rgba(32, 41, 66, 1);
+  background-color: rgb(59, 108, 146);
   bottom: -120px;
-  margin-left: 5px;
   transition: bottom linear .2s;
   cursor: pointer;
+  margin-bottom: 42px;
+  margin-left: 42px;
+}
+
+.go-up img {
+  width: 56px;
+  height: 56px;
 }
 
 
@@ -142,7 +164,7 @@ u {
   transition: background-color 0.2s ease;
 }
 
-#label3{
+#label3 {
   justify-content: center;
   display: flex;
 }
@@ -265,32 +287,87 @@ u {
   justify-content: center;
 }
 
+#my-name{
+  font-size: 37px;
+  margin-bottom: 10px;
+}
+
 .profile-box {
-  background-color: rgb(90, 86, 110);
-  border-radius: 10px 10px 10px;
-  border-color: rgb(97, 165, 216);
-  border-width: 4px;
-  border-style: solid;
   margin-bottom: 30vh;
   text-align: center;
-  width: 650px;
-  font-size: 19px;
-  color: white;
-  margin-top: 180px;
+  width: 350px;
+  color: #333;
+  font-weight: bold;
+  font-size: 22px;
+  margin-top: 290px;
+}
+
+#profile-pic{
+  position: absolute;
+  left: 50%;
+  margin-left: -95px;
+  margin-top: 75px;
+}
+
+.bar-1{
+  background-color:rgb(97,165, 216);
+  border-radius: 90px;
+  width:280px;
+  height:4px;
+  opacity: 0.4;
+  margin-top:10px;
+  left: 50%;
+  margin-left: -140px;
+  position:absolute;
+}
+
+.bar-2{
+  background-color:rgb(97,165, 216);
+  border-radius: 90px;
+  width:260px;
+  height:4px;
+  opacity: 0.4;
+  left: 50%;
+  margin-left: -130px;
+  position:absolute;
+  margin-top:17px;
+}
+
+.bar-3{
+  background-color:rgb(97,165, 216);
+  border-radius: 90px;
+  width:330px;
+  height:4px;
+  opacity: 0.4;
+  margin-top:10px;
+  left: 50%;
+  margin-left: -165px;
+  position:absolute;
+}
+.bar-4{
+  background-color:rgb(97,165, 216);
+  border-radius: 90px;
+  width:310px;
+  height:4px;
+  opacity: 0.4;
+  margin-top:17px;
+  left: 50%;
+  margin-left: -155px;
+  position:absolute;
 }
 
 .bio {
-  width: 400px;
-  margin-left: 120px;
-  margin-top: 8px;
+  margin-top: 29px;
+  font-weight: bold;
+  font-size: 19px;
+
 }
 
 .info {
-  color: white;
+  color: #333;
   font-weight: bold;
   font-size: 19px;
-  margin-top: 15px;
-  margin-left: 11px;
+  margin-top: 35px;
   margin-bottom: 20px;
 }
 
@@ -358,7 +435,7 @@ u {
 
 .skills-desc {
   display: none;
-  width: 550px;
+  width: 750px;
   margin-top: 20px;
   text-align: center;
   font-weight: bold;
@@ -366,11 +443,13 @@ u {
   color: floralwhite;
   border-radius: 2px;
   margin-bottom: 70px;
+  margin-left: -60px;
 }
 
 .skills-desc p {
   margin: 20px;
   margin-top: 10px;
+  font-size: 19px;
 }
 
 .skills-desc img {
@@ -432,7 +511,7 @@ u {
 .close-but {
   border-radius: 12px;
   cursor: pointer;
-  margin-left: 245px;
+  margin-left: 283px;
   width: 59px;
   height: 59px;
   background-color: rgba(32, 41, 66, 1);
@@ -444,10 +523,6 @@ u {
   margin-left: 2px;
 }
 
-.but-icon {
-  margin-left: 57px;
-  margin-top: 32px;
-}
 
 .posts-but {
   width: 306px;
@@ -466,16 +541,66 @@ u {
   margin-top: 10px;
 }
 
+
+.contact-page {
+  display: none;
+  height: auto;
+}
+
 .sixth-box {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
+}
+
+.contact-box {
+  width: 600px;
+  margin-top: 50px;
+}
+
+.contact-options {
+  width: 100%;
+  display: block;
+}
+
+.contact-options ul {
+  list-style: none;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.contact-options ul li {
+  width: 182px;
+  float: left;
+}
+
+.contact-options ul li a {
+  text-decoration: none;
+}
+
+.contact-but {
+  margin: 0px;
+  width: 160px;
+  height: 140px;
+  padding: 5px;
+  background-color: rgba(32, 41, 66, 1);
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 400;
+  position: relative;
+  margin-left: 10px;
   font-size: 20px;
 }
 
-.contact-page {
-  display: none;
+.but-icon {
+  margin-left: 60px;
+  margin-top: 35px;
+  width: 90px;
+  height: 60px;
 }
 
 .email-box {
@@ -523,13 +648,6 @@ u {
   font-weight: bold;
 }
 
-.contact-box {
-  width: 900px;
-  margin-left: -50px;
-  margin-top: 90px;
-  margin-bottom: 10px;
-}
-
 #status-error {
   display: none;
 }
@@ -542,52 +660,17 @@ u {
   display: none;
 }
 
-.contact-options {
-  margin-top: 10px;
-  position: relative;
-  align-items: center;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 
-.contact-options ul {
-  list-style: none;
-  display: block;
-  height: 10px;
-}
-
-.contact-options ul li {
-  align-items: center;
-  text-align: left;
-  float: left;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Courier, monospace;
-}
-
-.contact-options ul li a {
-  text-decoration: none;
-}
 
 #down-but {
   transition: linear 3s;
 }
 
-.contact-but {
-  margin: 0px;
-  width: 140px;
-  height: 110px;
-  padding: 5px;
-  background-color: rgba(32, 41, 66, 1);
-  display: block;
-  color: #fff;
-  cursor: pointer;
-  text-align: left;
-  font-weight: 400;
-  position: relative;
-  margin-left: 10px;
+#contact-title {
+  margin-bottom: 0px;
 }
+
+
 
 .form-group {
   width: 90%;
@@ -655,52 +738,49 @@ textarea {
 }
 
 @media screen and (max-width: 1229px) {
+
   #nav-tabs {
     display: none;
-  }
-
-  .posts-box{
-    width: 100%;
   }
 
   #nav-tab-mobile {
     display: flex;
   }
 
+}
+
+
+@media screen and (max-width: 691px) {
+
+
+  .posts-box {
+    width: 100%;
+  }
+
+  .posts-but {
+    width: 99%;
+  }
+
+  .posts-but img {
+    width: 95%;
+    height: auto;
+  }
+
   .go-up {
-    width: 100px;
-    height: 100px;
   }
 
   .go-up img {
-    width: 100px;
-    height: 100px;
+    width: 56px;
+    height: 56px;
   }
 
-  .close-but{
-    margin-left: 285px;
+  .close-but {
+    margin-left: 161px;
   }
 
-  .mam-bottom p{
+  .mam-bottom p {
     margin-left: 5px;
-  }
-
-  #contact-options ul {
-    width: 490px;
-    margin-left: 50px;
-  }
-
-  .but-icon {
-    width: 130px;
-    height: 90px;
-    margin-left: 95px;
-    margin-top: 60px;
-  }
-
-  #bio {
-    font-size: 27px;
-    width: 600px;
-    margin-left: 20px;
+    font-size: 21px;
   }
 
   .skills-desc {
@@ -726,47 +806,71 @@ textarea {
 
   .skills-content {
     width: 99%;
+    vertical-align: middle;
+    display: table-cell;
   }
 
-  .email-box {
-    margin-left: 50px;
+
+  .lg-but {
+    margin-top: 15px;
+    margin-left: 10px;
   }
 
   .pt-but {
-    width: 90px;
-    height: 70px;
-    margin-left: 96px;
+    width: 60px;
+    height: 50px;
+    margin-left: 66px;
   }
 
   .ing-but {
-    width: 90px;
-    height: 70px;
+    width: 60px;
+    height: 50px;
   }
 
   .lg-but button img {
-    width: 80px;
-    height: 60px;
+    width: 60px;
+    height: 40px;
   }
 
-  .contact-but{
-    font-size: 29px;
-    width: 220px;
-    height: 190px;
-  }
+
   .contact-bar p {
     font-size: 25px;
     padding: 2px;
   }
 
-  .email-box{
-    width: 60%;
+  .contact-box {
+    width: 350px;
+    display: flex;
+    justify-content: center;
   }
-  .form-group{
-    font-size: 25px;
+
+  .contact-options {
+    display: flex;
+    justify-content: center;
   }
-  .form-group input,
-  .form-group textarea{
-    font-size: 27px;
+
+  .contact-options ul {
+    display: block;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    align-items: center;
+    vertical-align: middle;
   }
+
+  .contact-options ul li {
+    margin-bottom: 10px;
+    width: 170px;
+  }
+
+  #close-message {
+    margin-left: 123px;
+    margin-top: -90px;
+  }
+
+  .email-box {
+    margin-top: 50px;
+  }
+
 
 }
