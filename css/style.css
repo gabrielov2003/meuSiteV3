@@ -294,7 +294,7 @@ u {
 }
 
 .profile-box {
-  margin-bottom: 30vh;
+  margin-bottom: 100px;
   text-align: center;
   width: 350px;
   color: #333;
@@ -764,6 +764,10 @@ textarea {
 
 @media screen and (max-width: 691px) {
 
+
+  .profile-box{
+    width: 100%;
+  }
 
   .posts-box {
     width: 100%;
