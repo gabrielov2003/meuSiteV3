@@ -828,7 +828,9 @@ textarea {
   }
 
   .close-but {
-    margin-left: 161px;
+    margin-left: -27px;
+    left: 50%;
+    position: relative;
   }
 
   .mam-bottom p {
