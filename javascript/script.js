@@ -196,16 +196,16 @@ function closePost() {
 
 function zoomPic(este) {
 	if (picOpened == false) {
-		este.setAttribute("style", "transform: scale(1.8);-ms-transform: scale(1.8);-webkit-transform: scale(1.8);cursor: zoom-out;");
+		este.setAttribute("style", "transform: scale(1.8);-ms-transform: scale(1.8);-webkit-transform: scale(1.8);cursor: zoom-out;position:relative; z-index:100");
 		picOpened = true;
 		esteAnterior = este;
 	} else {
 		if (esteAnterior == este) {
-			este.setAttribute("style", "transform: scale(1);-ms-transform: scale(1);-webkit-transform: scale(1);cursor: zoom-in;");
+			este.setAttribute("style", "transform: scale(1);-ms-transform: scale(1);-webkit-transform: scale(1);cursor: zoom-in;position:relative; z-index:10");
 			picOpened = false;
 		} else {
-			esteAnterior.setAttribute("style", "transform: scale(1);-ms-transform: scale(1);-webkit-transform: scale(1);cursor: zoom-in;");
-			este.setAttribute("style", "transform: scale(1.8);-ms-transform: scale(1.8);-webkit-transform: scale(1.8);cursor: zoom-out;");
+			esteAnterior.setAttribute("style", "transform: scale(1);-ms-transform: scale(1);-webkit-transform: scale(1);cursor: zoom-in;position:relative; z-index:10");
+			este.setAttribute("style", "transform: scale(1.8);-ms-transform: scale(1.8);-webkit-transform: scale(1.8);cursor: zoom-out;position:relative; z-index:100");
 			picOpened = true;
 			esteAnterior = este;
 		}
@@ -214,7 +214,7 @@ function zoomPic(este) {
 
 function closePic() {
 	if (picOpened == true) {
-		esteAnterior.setAttribute("style", "transform: scale(1);-ms-transform: scale(1);-webkit-transform: scale(1);cursor: zoom-in;");
+		esteAnterior.setAttribute("style", "transform: scale(1);-ms-transform: scale(1);-webkit-transform: scale(1);cursor: zoom-in;position:relative; z-index:10");
 		picOpened = false;
 		esteAnterior = "";
 	}
