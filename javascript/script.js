@@ -2,8 +2,8 @@ var esteAnterior = ""; //Para funcao de zoom da imagem
 var picOpened = false; //Para funcao de zoom da imagem
 var postOpened = 0; //Post aberto
 var skillOpened = 0; //Skill aberta
-var mainPage;
-var contactPage;
+var mainPage; //Open main page
+var contactPage; //Open contact page
 var p = document.getElementsByClassName("pt"); //Textos em pt
 var e = document.getElementsByClassName("ing"); //Textos em ing
 
@@ -29,8 +29,7 @@ function switchEng() {
 	document.documentElement.lang = "en";
 }
 
-
-
+//Switch to navigator's default language
 lng = navigator.language;
 console.log("page language:", lng);
 if (lng == "pt-BR") {
@@ -39,11 +38,10 @@ if (lng == "pt-BR") {
 	}, 1);
 }
 
-//Scroll Profile //Mudar conforme lingua
+//Scroll to different pages
 function scrollProfile() {
 	closeContact();
 	document.getElementById("perfil").scrollIntoView();
-	//setTimeout(function(){window.scrollBy(0, 100);}, 10)
 }
 
 function scrollResume() {
@@ -54,13 +52,15 @@ function scrollResume() {
 function scrollSkills() {
 	closeContact();
 	document.getElementById("compt").scrollIntoView();
-	//setTimeout(function(){window.scrollBy(0, -100);}, 10)
+
 }
 
 function scrollPortf() {
 	closeContact();
 	document.getElementById("lastPage").scrollIntoView();
 }
+
+//Open and close contact page:
 
 function scrollContact() {
 	mainPage = document.getElementsByClassName("main-content");
@@ -80,14 +80,17 @@ function closeContact() {
 	closeEmailBox()
 }
 
+//Scroll all the way up
+
 function scrollUp() {
 	window.scrollTo(0, 0);
 }
-//Page scroll
+
+
+//Shows go-up button
 window.onscroll = function () {
 	myFunction()
 };
-
 function myFunction() {
 	goup = document.getElementsByClassName("go-up");
 	if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
@@ -97,6 +100,7 @@ function myFunction() {
 	}
 }
 
+//Open and close email box functions 
 function openEmailBox() {
 	var contactButtons = document.getElementsByClassName("contact-options");
 	var emailBox = document.getElementsByClassName("email-box")
@@ -114,7 +118,7 @@ function closeEmailBox() {
 	closeStatus();
 }
 
-//Open buttons list:
+//Open buttons list for mobile:
 var listOpened = false;
 
 function navToggle() {
@@ -268,12 +272,13 @@ function ajax(method, url, data, success, error) {
 	};
 	xhr.send(data);
 }
-//Contact Form End
+
 
 function closeStatus() {
 	document.getElementById("status-error").style.display = "none";
 	document.getElementById("status").style.display = "none";
 }
+//Contact Form End
 
 //Watson:
 
