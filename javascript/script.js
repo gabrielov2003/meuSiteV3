@@ -30,13 +30,16 @@ function switchEng() {
 }
 
 //Switch to navigator's default language
-lng = navigator.language;
-console.log("page language:", lng);
-if (lng == "pt-BR") {
-	setTimeout(() => {
+function openFunction()
+{
+	lng = navigator.language;
+	console.log("page language:", lng);
+	if (lng == "pt-BR"){
 		switchPt();
-	}, 1);
+	}
 }
+
+
 
 //Scroll to different pages
 function scrollProfile() {
