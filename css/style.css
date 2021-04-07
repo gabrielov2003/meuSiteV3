@@ -310,33 +310,37 @@ u {
   margin-top: 75px;
 }
 
-.cv-but{
+.cv-but {
   cursor: pointer;
   color: #fff;
   padding: 20px;
   margin-top: 50px;
   display: flex;
   width: 95%;
-  margin-left:2.5%;
+  margin-left: 2.5%;
   text-decoration: none;
   justify-content: center;
   margin-bottom: 20px;
   background-color: rgba(32, 41, 66, 1);
   transition: background-color linear .2s;
 }
-.cv-but:hover{
+
+.cv-but:hover {
   background-color: rgb(57, 127, 184);
 }
-.cv-but p{
+
+.cv-but p {
   font-size: 24px;
   margin-top: 3px;
   margin-right: 17px;
 }
-.cv-but img{
+
+.cv-but img {
   position: relative;
   margin-left: 10px;
 }
-.cv-but .ing{
+
+.cv-but .ing {
   font-size: 20px;
   margin-top: 4px;
 }
@@ -783,6 +787,26 @@ textarea {
 }
 
 @media screen and (max-width: 1229px) {
+  .lg-but {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  .pt-but {
+    width: 60px;
+    height: 50px;
+    margin-left: 66px;
+  }
+
+  .ing-but {
+    width: 60px;
+    height: 50px;
+  }
+
+  .lg-but button img {
+    width: 60px;
+    height: 40px;
+  }
 
   #nav-tabs {
     display: none;
@@ -798,7 +822,7 @@ textarea {
 @media screen and (max-width: 691px) {
 
 
-  .profile-box{
+  .profile-box {
     width: 100%;
   }
 
@@ -866,26 +890,6 @@ textarea {
   }
 
 
-  .lg-but {
-    margin-top: 15px;
-    margin-left: 10px;
-  }
-
-  .pt-but {
-    width: 60px;
-    height: 50px;
-    margin-left: 66px;
-  }
-
-  .ing-but {
-    width: 60px;
-    height: 50px;
-  }
-
-  .lg-but button img {
-    width: 60px;
-    height: 40px;
-  }
 
 
   .contact-bar p {
@@ -959,6 +963,10 @@ textarea {
 #WACLauncher__Button {
   width: 70px !important;
   height: 70px !important;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+
 }
 
 .WACLauncher__svg {
