@@ -1,5 +1,5 @@
-var esteAnterior = ""; //Para funcao de zoom da imagem
-var picOpened = false; //Para funcao de zoom da imagem
+var esteAnterior = ""; //zoom function
+var picOpened = false; //zoom function
 var postOpened = 0; //Post aberto
 var skillOpened = 0; //Skill aberta
 var mainPage; //Open main page
@@ -30,11 +30,10 @@ function switchEng() {
 }
 
 //Switch to navigator's default language
-function openFunction()
-{
+function openFunction() {
 	lng = navigator.language;
 	console.log("page language:", lng);
-	if (lng == "pt-BR"){
+	if (lng == "pt-BR") {
 		switchPt();
 	}
 }
@@ -94,6 +93,7 @@ function scrollUp() {
 window.onscroll = function () {
 	myFunction()
 };
+
 function myFunction() {
 	goup = document.getElementsByClassName("go-up");
 	if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
