@@ -38,6 +38,11 @@ a{
   
 }
 
+video{
+  width: 600px;
+  padding-bottom: 20px;
+}
+
 .lg-but {
   margin: 5px;
   position: fixed;
@@ -837,6 +842,10 @@ textarea {
     transition: transform .2s;
     width: 95%;
     height: auto;
+  }
+
+  video{
+    width: 95%;
   }
 
   .posts-box {
