@@ -33,6 +33,11 @@ u {
   cursor: pointer;
 }
 
+a{
+  color:#fff;
+  
+}
+
 .lg-but {
   margin: 5px;
   position: fixed;
