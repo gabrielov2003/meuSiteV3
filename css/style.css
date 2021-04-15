@@ -115,7 +115,7 @@ video {
   margin-left: 29px;
 }
 
-.go-up:hover{
+.go-up:hover {
   background-color: #2f5674;
 }
 
@@ -850,8 +850,8 @@ textarea {
   height: 70px !important;
   background-color: transparent !important;
   box-shadow: none !important;
-  bottom:0px !important;
-  right:17px !important;
+  bottom: 0px !important;
+  right: 17px !important;
   margin-bottom: 32px !important;
 }
 
@@ -992,8 +992,8 @@ textarea {
     background-color: transparent !important;
     box-shadow: none !important;
     margin-bottom: 32px !important;
-    bottom:0px !important;
-    right:17px !important;
+    bottom: 0px !important;
+    right: 17px !important;
   }
 
   #WACLauncher__Button {
@@ -1012,4 +1012,3 @@ textarea {
   }
 
 }
-
