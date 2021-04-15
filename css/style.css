@@ -35,13 +35,13 @@ u {
 
 a{
   color:#fff;
-  
 }
 
 video{
   width: 600px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
+
 
 .lg-but {
   margin: 5px;
@@ -263,6 +263,7 @@ video{
   height: 100vh;
   color: aliceblue;
   text-align: center;
+  padding-top: 1px;
 }
 
 .page-title {
@@ -425,6 +426,7 @@ video{
   height: auto;
   justify-content: center;
   display: flex;
+  padding-top: 1px;
 }
 
 .mam-bottom {
@@ -438,6 +440,8 @@ video{
   max-width: 670px;
   font-weight: bold;
   margin-bottom: 140px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 .mam-bottom p {
@@ -497,6 +501,8 @@ video{
   border-radius: 2px;
   margin-bottom: 70px;
   margin-left: -60px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .skills-desc p {
@@ -548,7 +554,8 @@ video{
   text-align: center;
   vertical-align: middle;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
+  padding-top: 1px;
 }
 
 .posts-box {
@@ -699,10 +706,10 @@ video{
   z-index: 1000000;
   position: absolute;
   color: aliceblue;
+  padding:25px;
 }
 
 .contact-bar p {
-  padding: 5px;
   font-size: 20px;
   font-weight: bold;
 }
@@ -843,6 +850,9 @@ textarea {
     width: 95%;
     height: auto;
   }
+  #imgs img{
+    width: 50%;
+  }
 
   video{
     width: 95%;
@@ -945,19 +955,22 @@ textarea {
   }
 
   .WACLauncher__ButtonContainer {
-    margin-bottom: 16px !important;
     margin-left: 60px !important;
     width: 70px !important;
     height: 70px !important;
     background-color: transparent !important;
     box-shadow: none !important;
+    margin-bottom: 16px !important;
   }
 
   #WACLauncher__Button {
     width: 70px !important;
     height: 70px !important;
     margin-left: 11px !important;
-    margin-top: -15px !important;
+    margin-bottom: 160px !important;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
   }
 
   .WACLauncher__svg {

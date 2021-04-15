@@ -62,6 +62,15 @@ function scrollPortf() {
 	document.getElementById("lastPage").scrollIntoView();
 }
 
+function scrollToPost(){
+	var postView = document.getElementById("postView");
+	postView.scrollIntoView();
+}
+function scrollToSkill(){
+	var skillView = document.getElementById("skillView");
+	skillView.scrollIntoView();
+}
+
 //Open and close contact page:
 
 function scrollContact() {
@@ -69,7 +78,9 @@ function scrollContact() {
 	mainPage[0].style.display = "none";
 	contactPage = document.getElementsByClassName("contact-page");
 	contactPage[0].style.display = "block";
-	navClose()
+	navClose();
+	closePost();
+	closeSkill();
 }
 
 function closeContact() {
@@ -154,7 +165,7 @@ function openSkill(skillNum) {
 	document.getElementById("s" + skillNum).style.display = "block";
 	close = document.getElementsByClassName("close-but");
 	close[0].style.display = "block";
-	scrollSkills()
+	scrollToSkill();
 	skillOpened = skillNum;
 }
 
@@ -181,7 +192,7 @@ function openPost(postNum) {
 	document.getElementById("p" + postNum).style.display = "block";
 	close = document.getElementsByClassName("close-but");
 	close[1].style.display = "block";
-	scrollPortf()
+	scrollToPost();
 	postOpened = postNum;
 }
 
@@ -189,6 +200,10 @@ function closePost() {
 	for (i = 0; i < postButtonClicked.length; i++) {
 		postButtonClicked[i].style.marginLeft = "0px";
 		postButtonClicked[i].style.display = "block";
+	}
+	var videos = document.getElementsByTagName("video");
+	for(index=0;index<videos.length;index++){
+		videos[index].pause();
 	}
 	close = document.getElementsByClassName("close-but");
 	close[1].style.display = "none";
@@ -199,22 +214,29 @@ function closePost() {
 	closePic();
 }
 
+function openP4(){ //Fix bug with text problem on button of skill6
+	var p = "4p";
+	openPost(p);
+}
+
 //Zoom Picture:
 
 function zoomPic(este) {
-	if (picOpened == false) {
-		este.setAttribute("style", "transform: scale(1.8);-ms-transform: scale(1.8);-webkit-transform: scale(1.8);cursor: zoom-out;position:relative; z-index:100");
-		picOpened = true;
-		esteAnterior = este;
-	} else {
-		if (esteAnterior == este) {
-			este.setAttribute("style", "transform: scale(1);-ms-transform: scale(1);-webkit-transform: scale(1);cursor: zoom-in;position:relative; z-index:10");
-			picOpened = false;
-		} else {
-			esteAnterior.setAttribute("style", "transform: scale(1);-ms-transform: scale(1);-webkit-transform: scale(1);cursor: zoom-in;position:relative; z-index:10");
+	if (window.screen.width > 691){
+		if (picOpened == false) {
 			este.setAttribute("style", "transform: scale(1.8);-ms-transform: scale(1.8);-webkit-transform: scale(1.8);cursor: zoom-out;position:relative; z-index:100");
 			picOpened = true;
 			esteAnterior = este;
+		} else {
+			if (esteAnterior == este) {
+				este.setAttribute("style", "transform: scale(1);-ms-transform: scale(1);-webkit-transform: scale(1);cursor: zoom-in;position:relative; z-index:10");
+				picOpened = false;
+			} else {
+				esteAnterior.setAttribute("style", "transform: scale(1);-ms-transform: scale(1);-webkit-transform: scale(1);cursor: zoom-in;position:relative; z-index:10");
+				este.setAttribute("style", "transform: scale(1.8);-ms-transform: scale(1.8);-webkit-transform: scale(1.8);cursor: zoom-out;position:relative; z-index:100");
+				picOpened = true;
+				esteAnterior = este;
+			}
 		}
 	}
 }
