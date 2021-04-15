@@ -33,11 +33,11 @@ u {
   cursor: pointer;
 }
 
-a{
-  color:#fff;
+a {
+  color: #fff;
 }
 
-video{
+video {
   width: 600px;
   margin-bottom: 20px;
 }
@@ -109,10 +109,14 @@ video{
   position: fixed;
   background-color: rgb(59, 108, 146);
   bottom: -120px;
-  transition: bottom linear .2s;
+  transition: linear .2s;
   cursor: pointer;
   margin-bottom: 42px;
   margin-left: 29px;
+}
+
+.go-up:hover{
+  background-color: #2f5674;
 }
 
 .go-up img {
@@ -706,7 +710,7 @@ video{
   z-index: 1000000;
   position: absolute;
   color: aliceblue;
-  padding:25px;
+  padding: 25px;
 }
 
 .contact-bar p {
@@ -835,6 +839,32 @@ textarea {
 
 }
 
+.WACLauncher__svg {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.WACLauncher__ButtonContainer {
+  margin-left: 60px !important;
+  width: 70px !important;
+  height: 70px !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  bottom:0px !important;
+  right:17px !important;
+  margin-bottom: 32px !important;
+}
+
+#WACLauncher__Button {
+  width: 70px !important;
+  height: 70px !important;
+  margin-left: -11px !important;
+  margin-top: -15px !important;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 
 @media screen and (max-width: 691px) {
 
@@ -850,11 +880,12 @@ textarea {
     width: 95%;
     height: auto;
   }
-  #imgs img{
+
+  #imgs img {
     width: 50%;
   }
 
-  video{
+  video {
     width: 95%;
   }
 
@@ -960,14 +991,16 @@ textarea {
     height: 70px !important;
     background-color: transparent !important;
     box-shadow: none !important;
-    margin-bottom: 16px !important;
+    margin-bottom: 32px !important;
+    bottom:0px !important;
+    right:17px !important;
   }
 
   #WACLauncher__Button {
     width: 70px !important;
     height: 70px !important;
     margin-left: 11px !important;
-    margin-bottom: 160px !important;
+    margin-top: -15px !important;
     outline: none !important;
     border: none !important;
     box-shadow: none !important;
@@ -980,22 +1013,3 @@ textarea {
 
 }
 
-.WACLauncher__ButtonContainer {
-  margin-bottom: 16px !important;
-  margin-left: 30px !important;
-  width: 70px !important;
-  height: 70px !important;
-}
-
-#WACLauncher__Button {
-  width: 70px !important;
-  height: 70px !important;
-  outline: none !important;
-  border: none !important;
-  box-shadow: none !important;
-}
-
-.WACLauncher__svg {
-  width: 50px !important;
-  height: 50px !important;
-}

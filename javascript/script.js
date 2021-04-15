@@ -62,11 +62,12 @@ function scrollPortf() {
 	document.getElementById("lastPage").scrollIntoView();
 }
 
-function scrollToPost(){
+function scrollToPost() {
 	var postView = document.getElementById("postView");
 	postView.scrollIntoView();
 }
-function scrollToSkill(){
+
+function scrollToSkill() {
 	var skillView = document.getElementById("skillView");
 	skillView.scrollIntoView();
 }
@@ -202,7 +203,7 @@ function closePost() {
 		postButtonClicked[i].style.display = "block";
 	}
 	var videos = document.getElementsByTagName("video");
-	for(index=0;index<videos.length;index++){
+	for (index = 0; index < videos.length; index++) {
 		videos[index].pause();
 	}
 	close = document.getElementsByClassName("close-but");
@@ -214,7 +215,7 @@ function closePost() {
 	closePic();
 }
 
-function openP4(){ //Fix bug with text problem on button of skill6
+function openP4() { //Fix bug with text problem on button of skill6
 	var p = "4p";
 	openPost(p);
 }
@@ -222,7 +223,7 @@ function openP4(){ //Fix bug with text problem on button of skill6
 //Zoom Picture:
 
 function zoomPic(este) {
-	if (window.screen.width > 691){
+	if (window.screen.width > 691) {
 		if (picOpened == false) {
 			este.setAttribute("style", "transform: scale(1.8);-ms-transform: scale(1.8);-webkit-transform: scale(1.8);cursor: zoom-out;position:relative; z-index:100");
 			picOpened = true;
