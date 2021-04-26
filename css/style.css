@@ -115,6 +115,10 @@ video {
   margin-left: 29px;
 }
 
+.grey-color{
+  color: #333;
+}
+
 .go-up:hover {
   background-color: #2f5674;
 }
